@@ -1,0 +1,305 @@
+--- po/git.pot.old	2022-06-15 09:36:17.910790962 +0000
++++ po/git.pot.new	2022-06-15 09:36:18.002792111 +0000
+@@ -4701,7 +4701,7 @@
+ msgid "Could not find remote branch %s to clone."
+ msgstr ""
+ 
+-#: builtin/clone.c fetch-pack.c
++#: builtin/clone.c
+ msgid "remote did not send all necessary objects"
+ msgstr ""
+ 
+@@ -6387,6 +6387,10 @@
+ msgstr ""
+ 
+ #: builtin/fetch.c
++msgid "git fetch --bundle-uri=<uri> [<options>]"
++msgstr ""
++
++#: builtin/fetch.c
+ msgid "fetch.parallel cannot be negative"
+ msgstr ""
+ 
+@@ -6523,6 +6527,14 @@
+ msgstr ""
+ 
+ #: builtin/fetch.c
++msgid "uri"
++msgstr ""
++
++#: builtin/fetch.c
++msgid "download bundle data from the given URI instead of from a remote"
++msgstr ""
++
++#: builtin/fetch.c
+ msgid "couldn't find remote ref HEAD"
+ msgstr ""
+ 
+@@ -6601,7 +6613,7 @@
+ 
+ #: builtin/fetch.c
+ #, c-format
+-msgid "%s did not send all necessary objects\n"
++msgid "connectivity check failed after fetching from %s\n"
+ msgstr ""
+ 
+ #: builtin/fetch.c
+@@ -6825,7 +6837,7 @@
+ msgid "quote placeholders suitably for Tcl"
+ msgstr ""
+ 
+-#: builtin/for-each-ref.c
++#: builtin/for-each-ref.c builtin/show-ref.c
+ msgid "show only <n> matched refs"
+ msgstr ""
+ 
+@@ -7065,6 +7077,11 @@
+ msgstr ""
+ 
+ #: builtin/fsck.c
++#, c-format
++msgid "%s: invalid sha1 pointer in resolve-undo"
++msgstr ""
++
++#: builtin/fsck.c
+ msgid "git fsck [<options>] [<object>...]"
+ msgstr ""
+ 
+@@ -11472,7 +11489,7 @@
+ msgstr ""
+ 
+ #: builtin/rebase.c
+-msgid "(DEPRECATED) try to recreate merges instead of ignoring them"
++msgid "(REMOVED) was: try to recreate merges instead of ignoring them"
+ msgstr ""
+ 
+ #: builtin/rebase.c
+@@ -11488,10 +11505,6 @@
+ msgstr ""
+ 
+ #: builtin/rebase.c
+-msgid "update local refs that point to commits that are being rebased"
+-msgstr ""
+-
+-#: builtin/rebase.c
+ msgid "add exec lines after each commit of the editable list"
+ msgstr ""
+ 
+@@ -11536,7 +11549,17 @@
+ msgstr ""
+ 
+ #: builtin/rebase.c
+-msgid "--preserve-merges was replaced by --rebase-merges"
++msgid ""
++"`rebase --preserve-merges` (-p) is no longer supported.\n"
++"Use `git rebase --abort` to terminate current rebase.\n"
++"Or downgrade to v2.33, or earlier, to complete the rebase."
++msgstr ""
++
++#: builtin/rebase.c
++msgid ""
++"--preserve-merges was replaced by --rebase-merges\n"
++"Note: Your `pull.rebase` configuration may also be  set to 'preserve',\n"
++"which is no longer supported; use 'merges' instead"
+ msgstr ""
+ 
+ #: builtin/rebase.c
+@@ -13395,6 +13418,16 @@
+ msgid "show refs from stdin that aren't in local repository"
+ msgstr ""
+ 
++#: builtin/show-ref.c
++#, c-format
++msgid "invalid --count argument: (`%d' < 0)"
++msgstr ""
++
++#: builtin/show-ref.c
++#, c-format
++msgid "--count is incompatible with %s"
++msgstr ""
++
+ #: builtin/sparse-checkout.c
+ msgid "git sparse-checkout (init|list|set|add|reapply|disable) <options>"
+ msgstr ""
+@@ -14163,11 +14196,6 @@
+ 
+ #: builtin/submodule--helper.c
+ #, c-format
+-msgid "Invalid update mode '%s' for submodule path '%s'"
+-msgstr ""
+-
+-#: builtin/submodule--helper.c
+-#, c-format
+ msgid "Invalid update mode '%s' configured for submodule path '%s'"
+ msgstr ""
+ 
+@@ -14309,7 +14337,15 @@
+ msgstr ""
+ 
+ #: builtin/submodule--helper.c
+-msgid "rebase, merge, checkout or none"
++msgid "update using checkout"
++msgstr ""
++
++#: builtin/submodule--helper.c
++msgid "update using rebase"
++msgstr ""
++
++#: builtin/submodule--helper.c
++msgid "update using merge"
+ msgstr ""
+ 
+ #: builtin/submodule--helper.c
+@@ -14333,10 +14369,6 @@
+ msgstr ""
+ 
+ #: builtin/submodule--helper.c
+-msgid "bad value for update parameter"
+-msgstr ""
+-
+-#: builtin/submodule--helper.c
+ msgid "recurse into submodules"
+ msgstr ""
+ 
+@@ -14724,6 +14756,19 @@
+ msgstr ""
+ 
+ #: builtin/unpack-objects.c
++msgid "failed to write object in stream"
++msgstr ""
++
++#: builtin/unpack-objects.c
++#, c-format
++msgid "inflate returned (%d)"
++msgstr ""
++
++#: builtin/unpack-objects.c
++msgid "invalid blob object from stream"
++msgstr ""
++
++#: builtin/unpack-objects.c
+ msgid "Unpacking objects"
+ msgstr ""
+ 
+@@ -15338,6 +15383,24 @@
+ msgid "only useful for debugging"
+ msgstr ""
+ 
++#: bundle-uri.c
++msgid "failed to create temporary file"
++msgstr ""
++
++#: bundle-uri.c
++msgid "insufficient capabilities"
++msgstr ""
++
++#: bundle-uri.c
++#, c-format
++msgid "failed to download bundle from URI '%s'"
++msgstr ""
++
++#: bundle-uri.c
++#, c-format
++msgid "file at URI '%s' is not a bundle"
++msgstr ""
++
+ #: bundle.c
+ #, c-format
+ msgid "unrecognized bundle hash algorithm: %s"
+@@ -18500,6 +18563,10 @@
+ msgstr ""
+ 
+ #: fetch-pack.c
++msgid "connectivity check failed after fetching from remote"
++msgstr ""
++
++#: fetch-pack.c
+ msgid "unexpected 'ready' from remote"
+ msgstr ""
+ 
+@@ -20650,6 +20717,26 @@
+ 
+ #: object-file.c
+ #, c-format
++msgid "write stream object %ld != %<PRIuMAX>"
++msgstr ""
++
++#: object-file.c
++#, c-format
++msgid "unable to stream deflate new object (%d)"
++msgstr ""
++
++#: object-file.c
++#, c-format
++msgid "deflateEnd on stream object failed (%d)"
++msgstr ""
++
++#: object-file.c
++#, c-format
++msgid "unable to create directory %s"
++msgstr ""
++
++#: object-file.c
++#, c-format
+ msgid "cannot read object for %s"
+ msgstr ""
+ 
+@@ -20898,6 +20985,15 @@
+ msgstr ""
+ 
+ #: pack-bitmap.c
++msgid "cannot stat bitmap file"
++msgstr ""
++
++#: pack-bitmap.c
++#, c-format
++msgid "ignoring extra bitmap file: %s"
++msgstr ""
++
++#: pack-bitmap.c
+ msgid "multi-pack bitmap is missing required reverse index"
+ msgstr ""
+ 
+@@ -20912,6 +21008,14 @@
+ msgstr ""
+ 
+ #: pack-bitmap.c
++msgid "packfile is invalid"
++msgstr ""
++
++#: pack-bitmap.c
++msgid "bitmap header is invalid"
++msgstr ""
++
++#: pack-bitmap.c
+ #, c-format
+ msgid "could not find %s in pack %s at offset %<PRIuMAX>"
+ msgstr ""
+@@ -22123,6 +22227,15 @@
+ msgstr ""
+ 
+ #: remote-curl.c
++msgid "protocol error: expected '<url> <path>', missing space"
++msgstr ""
++
++#: remote-curl.c
++#, c-format
++msgid "failed to download file at URL '%s'"
++msgstr ""
++
++#: remote-curl.c
+ msgid "git-http-push failed"
+ msgstr ""
+ 
+@@ -22505,6 +22618,11 @@
+ msgstr ""
+ 
+ #: revision.c
++#, c-format
++msgid "resolve-undo records `%s` which is missing"
++msgstr ""
++
++#: revision.c
+ msgid "--unpacked=<packfile> no longer supported"
+ msgstr ""
+ 
