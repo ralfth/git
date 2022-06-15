@@ -1,0 +1,69 @@
+--- po/git.pot.old	2022-06-15 09:36:22.449962674 +0000
++++ po/git.pot.new	2022-06-15 09:36:22.573970619 +0000
+@@ -11468,7 +11468,7 @@
+ msgstr ""
+ 
+ #: builtin/rebase.c
+-msgid "(DEPRECATED) try to recreate merges instead of ignoring them"
++msgid "(REMOVED) was: try to recreate merges instead of ignoring them"
+ msgstr ""
+ 
+ #: builtin/rebase.c
+@@ -11528,7 +11528,17 @@
+ msgstr ""
+ 
+ #: builtin/rebase.c
+-msgid "--preserve-merges was replaced by --rebase-merges"
++msgid ""
++"`rebase --preserve-merges` (-p) is no longer supported.\n"
++"Use `git rebase --abort` to terminate current rebase.\n"
++"Or downgrade to v2.33, or earlier, to complete the rebase."
++msgstr ""
++
++#: builtin/rebase.c
++msgid ""
++"--preserve-merges was replaced by --rebase-merges\n"
++"Note: Your `pull.rebase` configuration may also be  set to 'preserve',\n"
++"which is no longer supported; use 'merges' instead"
+ msgstr ""
+ 
+ #: builtin/rebase.c
+@@ -13030,10 +13040,6 @@
+ msgstr ""
+ 
+ #: builtin/revert.c
+-msgid "use the 'reference' format to refer to commits"
+-msgstr ""
+-
+-#: builtin/revert.c
+ msgid "append commit name"
+ msgstr ""
+ 
+@@ -13050,6 +13056,10 @@
+ msgstr ""
+ 
+ #: builtin/revert.c
++msgid "use the 'reference' format to refer to commits"
++msgstr ""
++
++#: builtin/revert.c
+ msgid "revert failed"
+ msgstr ""
+ 
+@@ -22087,6 +22097,16 @@
+ msgstr ""
+ 
+ #: remote.c
++#, c-format
++msgid "unrecognized value fetch.credentialsInURL: '%s'"
++msgstr ""
++
++#: remote.c
++#, c-format
++msgid "URL '%s' uses plaintext credentials"
++msgstr ""
++
++#: remote.c
+ #, c-format
+ msgid "Cannot fetch both %s and %s to %s"
+ msgstr ""
