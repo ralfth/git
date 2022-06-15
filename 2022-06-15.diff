@@ -67,3 +67,42 @@
  #, c-format
  msgid "Cannot fetch both %s and %s to %s"
  msgstr ""
+
+
+########################################
+
+--- po/git.pot.old	2022-06-15 23:20:38.797630982 +0000
++++ po/git.pot.new	2022-06-15 23:20:38.897632331 +0000
+@@ -7093,6 +7093,11 @@
+ msgstr ""
+ 
+ #: builtin/fsck.c
++#, c-format
++msgid "%s: invalid sha1 pointer in resolve-undo"
++msgstr ""
++
++#: builtin/fsck.c
+ msgid "git fsck [<options>] [<object>...]"
+ msgstr ""
+ 
+@@ -10918,7 +10923,7 @@
+ msgid ""
+ "\n"
+ "To avoid automatically configuring upstream branches when their name\n"
+-"doesn't match the local branch, see option 'simple' of branch.autosetupmerge\n"
++"doesn't match the local branch, see option 'simple' of branch.autoSetupMerge\n"
+ "in 'git help config'.\n"
+ msgstr ""
+ 
+@@ -22445,6 +22450,11 @@
+ msgstr ""
+ 
+ #: revision.c
++#, c-format
++msgid "resolve-undo records `%s` which is missing"
++msgstr ""
++
++#: revision.c
+ msgid "--unpacked=<packfile> no longer supported"
+ msgstr ""
+ 
