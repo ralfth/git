@@ -1,0 +1,88 @@
+--- po/git.pot.old	2022-06-17 18:20:55.673446732 +0000
++++ po/git.pot.new	2022-06-17 18:20:55.789448085 +0000
+@@ -7323,7 +7323,7 @@
+ 
+ #: builtin/gc.c
+ #, c-format
+-msgid "failed to parse gc.logexpiry value %s"
++msgid "failed to parse gc.logExpiry value %s"
+ msgstr ""
+ 
+ #: builtin/gc.c
+@@ -8199,7 +8199,7 @@
+ 
+ #: builtin/index-pack.c builtin/pack-objects.c
+ #, c-format
+-msgid "bad pack.indexversion=%<PRIu32>"
++msgid "bad pack.indexVersion=%<PRIu32>"
+ msgstr ""
+ 
+ #: builtin/index-pack.c
+@@ -12067,11 +12067,11 @@
+ msgstr ""
+ 
+ #: builtin/remote.c
+-msgid " skipped"
++msgid " tracked"
+ msgstr ""
+ 
+ #: builtin/remote.c
+-msgid " tracked"
++msgid " skipped"
+ msgstr ""
+ 
+ #: builtin/remote.c
+@@ -12362,7 +12362,7 @@
+ #: builtin/repack.c
+ msgid ""
+ "Incremental repacks are incompatible with bitmap indexes.  Use\n"
+-"--no-write-bitmap-index or disable the pack.writebitmaps configuration."
++"--no-write-bitmap-index or disable the pack.writeBitmaps configuration."
+ msgstr ""
+ 
+ #: builtin/repack.c
+@@ -16458,7 +16458,7 @@
+ msgid ""
+ "Warning: commit message did not conform to UTF-8.\n"
+ "You may want to amend it after fixing the message, or set the config\n"
+-"variable i18n.commitencoding to the encoding your project uses.\n"
++"variable i18n.commitEncoding to the encoding your project uses.\n"
+ msgstr ""
+ 
+ #: compat/compiler.h
+@@ -19460,7 +19460,7 @@
+ msgstr ""
+ 
+ #: gpg-interface.c
+-msgid "user.signingkey needs to be set for ssh signing"
++msgid "user.signingKey needs to be set for ssh signing"
+ msgstr ""
+ 
+ #: gpg-interface.c
+@@ -19670,7 +19670,7 @@
+ 
+ #: http.c
+ #, c-format
+-msgid "negative value for http.postbuffer; defaulting to %d"
++msgid "negative value for http.postBuffer; defaulting to %d"
+ msgstr ""
+ 
+ #: http.c
+@@ -22275,7 +22275,7 @@
+ 
+ #: remote.c
+ #, c-format
+-msgid "unrecognized value transfer.credentialsInURL: '%s'"
++msgid "unrecognized value transfer.credentialsInUrl: '%s'"
+ msgstr ""
+ 
+ #: remote.c
+@@ -23740,7 +23740,7 @@
+ msgstr ""
+ 
+ #: submodule-config.c
+-msgid "negative values not allowed for submodule.fetchjobs"
++msgid "negative values not allowed for submodule.fetchJobs"
+ msgstr ""
+ 
+ #: submodule-config.c
