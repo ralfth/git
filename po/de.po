@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #, c-format
 msgid "Huh (%s)?"
@@ -1413,7 +1413,7 @@ msgid "time"
 msgstr "Zeit"
 
 msgid "set modification time of archive entries"
-msgstr ""
+msgstr "Änderungszeitpunkt von Archiveinträgen festlegen"
 
 msgid "set compression level"
 msgstr "Komprimierungsgrad setzen"
@@ -1455,13 +1455,12 @@ msgstr "Argument für Format '%s' nicht unterstützt: -%d"
 msgid "%.*s is not a valid attribute name"
 msgstr "%.*s ist kein gültiger Attributname"
 
-#, fuzzy
 msgid "unable to add additional attribute"
-msgstr "Konnte %s nicht zur Datenbank hinzufügen"
+msgstr "konnte kein zusätzliches Attribut hinzufügen"
 
 #, c-format
 msgid "ignoring overly long attributes line %d"
-msgstr ""
+msgstr "ignoriere übermäßig lange Attribut-Zeile %d"
 
 #, c-format
 msgid "%s not allowed: %s:%d"
@@ -1474,17 +1473,17 @@ msgstr ""
 "Verneinende Muster werden in Git-Attributen ignoriert.\n"
 "Benutzen Sie '\\!' für führende Ausrufezeichen."
 
-#, fuzzy, c-format
+#, c-format
 msgid "cannot fstat gitattributes file '%s'"
-msgstr "Kann %s Datei '%s' nicht schreiben."
+msgstr "Kann gitattributes-Datei '%s' nicht lesen"
 
-#, fuzzy, c-format
+#, c-format
 msgid "ignoring overly large gitattributes file '%s'"
-msgstr "ignoriere zusätzliche Bitmap-Datei: '%s'"
+msgstr "ignoriere übermäßig große gitattributes-Datei '%s'"
 
 #, c-format
 msgid "ignoring overly large gitattributes blob '%s'"
-msgstr ""
+msgstr "ignoriere übermäßig großen gitattribute-Blob '%s'"
 
 #, c-format
 msgid "Badly quoted content in file '%s': %s"
@@ -1767,13 +1766,13 @@ msgstr "ungültiger Branchpunkt: '%s'"
 msgid "submodule '%s': unable to find submodule"
 msgstr "Submodul '%s': Submodul konnte nicht gefunden werden"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "You may try updating the submodules using 'git checkout --no-recurse-"
 "submodules %s && git submodule update --init'"
 msgstr ""
-"Sie können versuchen die Submodule mit 'git checkout %s && git submodule "
-"update --init' zu aktualisieren"
+"Sie können versuchen, die Submodule mit \"git checkout --no-recurse-"
+"submodules %s && git submodule update --init\" zu aktualisieren."
 
 #, c-format
 msgid "submodule '%s': cannot create branch '%s'"
@@ -1813,6 +1812,8 @@ msgid ""
 "the add.interactive.useBuiltin setting has been removed!\n"
 "See its entry in 'git help config' for details."
 msgstr ""
+"Die Einstellung add.interactive.useBuiltin wurde entfernt!\n"
+"Siehe den Eintrag in 'git help config' für Details."
 
 msgid "Could not read the index"
 msgstr "Konnte den Index nicht lesen"
@@ -2220,9 +2221,8 @@ msgstr "git am [<Optionen>] (--continue | --skip | --abort)"
 msgid "run interactively"
 msgstr "interaktiv ausführen"
 
-#, fuzzy
 msgid "bypass pre-applypatch and applypatch-msg hooks"
-msgstr "Hooks pre-commit und commit-msg umgehen"
+msgstr "Hooks pre-applypatch und applypatch-msg umgehen"
 
 msgid "historical option -- no-op"
 msgstr "historische Option -- kein Effekt"
@@ -2365,34 +2365,28 @@ msgstr "git archive: Protokollfehler"
 msgid "git archive: expected a flush"
 msgstr "git archive: erwartete eine Spülung (flush)"
 
-#, fuzzy
 msgid ""
 "git bisect start [--term-{new,bad}=<term> --term-{old,good}=<term>]    [--no-"
 "checkout] [--first-parent] [<bad> [<good>...]] [--]    [<pathspec>...]"
 msgstr ""
-"git bisect--helper --bisect-start [--term-{new,bad}=<Begriff> --term-{old,"
-"good}=<Begriff>] [--no-checkout] [--first-parent] [<schlecht> [<gut>...]] "
-"[--] [<Pfade>...]"
+"git bisect start [--term-{new,bad}=<Begriff> --term-{old,good}=<Begriff>] [--"
+"no-checkout] [--first-parent] [<schlecht> [<gut>...]] [--] "
+"[<Pfadspezifikation>...]"
 
-#, fuzzy
 msgid "git bisect (good|bad) [<rev>...]"
-msgstr "git bisect--helper --bisect-state (good|old) [<Commit>...]"
+msgstr "git bisect (good|bad) [<Commit>...]"
 
-#, fuzzy
 msgid "git bisect skip [(<rev>|<range>)...]"
-msgstr "git bisect--helper --bisect-skip [(<Commit>|<Bereich>)...]"
+msgstr "git bisect skip [(<Commit>|<Bereich>)...]"
 
-#, fuzzy
 msgid "git bisect reset [<commit>]"
-msgstr "git bisect--helper --bisect-reset [<Commit>]"
+msgstr "git bisect reset [<Commit>]"
 
-#, fuzzy
 msgid "git bisect replay <logfile>"
-msgstr "git bisect--helper --bisect-replay <Dateiname>"
+msgstr "git bisect replay <Logdatei>"
 
-#, fuzzy
 msgid "git bisect run <cmd>..."
-msgstr "git bisect--helper --bisect-run <Programm>..."
+msgstr "git bisect run <Programm>..."
 
 #, c-format
 msgid "cannot open file '%s' in mode '%s'"
@@ -2589,17 +2583,17 @@ msgstr "Ausführen von %s\n"
 msgid "bisect run failed: no command provided."
 msgstr "'bisect run' fehlgeschlagen: kein Befehl angegeben."
 
-#, fuzzy, c-format
+#, c-format
 msgid "unable to verify %s on good revision"
-msgstr "konnte '%s' nicht für guten Commit überprüfen"
+msgstr "kann %s bei gutem Commit nicht verifizieren"
 
 #, c-format
 msgid "bogus exit code %d for good revision"
 msgstr "fehlerhafter Exit-Code %d für guten Commit"
 
-#, fuzzy, c-format
+#, c-format
 msgid "bisect run failed: exit code %d from %s is < 0 or >= 128"
-msgstr "'bisect run' fehlgeschlagen: Exit-Code %d von '%s' ist < 0 oder >= 128"
+msgstr "bisect-Lauf fehlgeschlagen: Exit-Code %d von %s ist < 0 oder >= 128"
 
 #, c-format
 msgid "cannot open file '%s' for writing"
@@ -2614,34 +2608,32 @@ msgstr "'bisect run' erfolgreich ausgeführt"
 msgid "bisect found first bad commit"
 msgstr "binäre Suche fand ersten schlechten Commit"
 
-#, fuzzy, c-format
+#, c-format
 msgid "bisect run failed: 'git bisect %s' exited with error code %d"
 msgstr ""
-"'bisect run' fehlgeschlagen: 'git bisect--helper --bisect-state %s' mit "
-"Fehlercode %d beendet"
+"bisect-Lauf fehlgeschlagen: 'git bisect %s' wurde mit Fehlercode %d beendet"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' requires either no argument or a commit"
-msgstr "--bisect-reset benötigt entweder kein Argument oder ein Commit"
+msgstr "'%s' erfordert entweder kein Argument oder einen Commit"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' requires 0 or 1 argument"
-msgstr "%s benötigt Argumente"
+msgstr "'%s' erfordert 0 oder 1 Argument"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' requires 0 arguments"
-msgstr "%s benötigt Argumente"
+msgstr "'%s' erfordert 0 Argumente"
 
 msgid "no logfile given"
 msgstr "keine Log-Datei angegeben"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' failed: no command provided."
-msgstr "'bisect run' fehlgeschlagen: kein Befehl angegeben."
+msgstr "'%s' ist fehlgeschlagen: kein Befehl angegeben."
 
-#, fuzzy
 msgid "need a command"
-msgstr "benötige einen Unterbefehl"
+msgstr "Befehl benötigt"
 
 #, c-format
 msgid "unknown command: '%s'"
@@ -3237,9 +3229,8 @@ msgstr "git bundle list-heads <Datei> [<Referenzname>...]"
 msgid "git bundle unbundle [--progress] <file> [<refname>...]"
 msgstr "git bundle unbundle [--progress] <Datei> [<Referenzname>...]"
 
-#, fuzzy
 msgid "need a <file> argument"
-msgstr "-d benötigt mindestens ein Argument"
+msgstr "<Datei> Argument benötigt"
 
 msgid "do not show progress meter"
 msgstr "keine Fortschrittsanzeige anzeigen"
@@ -3432,16 +3423,18 @@ msgstr "<Objekt> benötigt mit '-%c'"
 msgid "only two arguments allowed in <type> <object> mode, not %d"
 msgstr "nur zwei Argumente im <Typ> <Objekt> Modus erlaubt, nicht %d"
 
-#, fuzzy
 msgid ""
 "git check-attr [--source <tree-ish>] [-a | --all | <attr>...] [--] "
 "<pathname>..."
-msgstr "git check-attr [-a | --all | <Attribut>...] [--] <Pfadname>..."
+msgstr ""
+"git check-attr [--source <Commit-Referenz>] [-a | --all | <Attribut>...] "
+"[--] <Pfadname>..."
 
-#, fuzzy
 msgid ""
 "git check-attr --stdin [-z] [--source <tree-ish>] [-a | --all | <attr>...]"
-msgstr "git check-attr --stdin [-z] [-a | --all | <Attribut>...]"
+msgstr ""
+"git check-attr --stdin [-z] [--source <Commit-Referenz>] [-a | --all | "
+"<Attribut>...]"
 
 msgid "report all attributes set on file"
 msgstr "alle Attribute einer Datei ausgeben"
@@ -3455,13 +3448,11 @@ msgstr "Dateinamen von der Standard-Eingabe lesen"
 msgid "terminate input and output records by a NUL character"
 msgstr "Einträge von Ein- und Ausgabe mit NUL-Zeichen abschließen"
 
-#, fuzzy
 msgid "<tree-ish>"
-msgstr "Commit-Referenz"
+msgstr "<Commit-Referenz>"
 
-#, fuzzy
 msgid "which tree-ish to check attributes at"
-msgstr "Von welcher Commit-Referenz ausgecheckt werden soll"
+msgstr "in welchem Commit die Attribute zu prüfen sind"
 
 msgid "suppress progress reporting"
 msgstr "Fortschrittsanzeige unterdrücken"
@@ -4456,9 +4447,8 @@ msgstr "konnte das Repository nicht initialisieren, überspringe Bundle-URI"
 msgid "failed to fetch objects from bundle URI '%s'"
 msgstr "Objekte aus Bundle-URI '%s' konnten nicht abgerufen werden"
 
-#, fuzzy
 msgid "failed to fetch advertised bundles"
-msgstr "Objekte aus Bundle-URI '%s' konnten nicht abgerufen werden"
+msgstr "angekündigte Bundles konnten nicht abgerufen werden"
 
 msgid "remote transport reported error"
 msgstr "Remoteübertragung meldete Fehler"
@@ -6138,9 +6128,9 @@ msgstr ""
 "--unshallow kann nicht in einem Repository mit vollständiger Historie "
 "verwendet werden"
 
-#, fuzzy, c-format
+#, c-format
 msgid "failed to fetch bundles from '%s'"
-msgstr "Objekte aus Bundle-URI '%s' konnten nicht abgerufen werden"
+msgstr "Bundles aus '%s' konnten nicht abgerufen werden"
 
 msgid "fetch --all does not take a repository argument"
 msgstr "fetch --all akzeptiert kein Repository als Argument"
@@ -7188,18 +7178,18 @@ msgstr "Verwendung: %s%s"
 msgid "'git help config' for more information"
 msgstr "'git help config' für weitere Informationen"
 
-#, fuzzy
 msgid ""
 "git hook run [--ignore-missing] [--to-stdin=<path>] <hook-name> [-- <hook-"
 "args>]"
-msgstr "git hook run [--ignore-missing] <Hook-Name> [-- <Hook-Argumente>]"
+msgstr ""
+"git hook run [--ignore-missing] [--to-stdin=<Pfad>] <Hook-Name> [-- <Hook-"
+"Argumente>]"
 
 msgid "silently ignore missing requested <hook-name>"
 msgstr "fehlende Anforderung <Hook-Name> stillschweigend ignorieren"
 
-#, fuzzy
 msgid "file to read into hooks' stdin"
-msgstr "Fehler beim Lesen des Index"
+msgstr "Datei zum Einlesen in das Hook-stdin"
 
 #, c-format
 msgid "object type mismatch at %s"
@@ -8035,7 +8025,6 @@ msgstr ""
 "--format kann nicht mit -s, -o, -k, -t, --resolve-undo, --deduplicate, --eol "
 "verwendet werden"
 
-#, fuzzy
 msgid ""
 "git ls-remote [--heads] [--tags] [--refs] [--upload-pack=<exec>]\n"
 "              [-q | --quiet] [--exit-code] [--get-url] [--sort=<key>]\n"
@@ -8043,7 +8032,7 @@ msgid ""
 msgstr ""
 "git ls-remote [--heads] [--tags] [--refs] [--upload-pack=<Programm>]\n"
 "              [-q | --quiet] [--exit-code] [--get-url] [--sort=<Schlüssel>]\n"
-"              [--symref] [<Repository> [<Referenzen>...]]"
+"              [--symref] [<Repository> [<Muster>...]]"
 
 msgid "do not print remote URL"
 msgstr "URL des Remote-Repositories nicht ausgeben"
@@ -8293,16 +8282,14 @@ msgstr "erlaube das Zusammenführen von nicht zusammenhängenden Historien"
 msgid "perform multiple merges, one per line of input"
 msgstr "mehrere Merges durchführen, eine pro Eingabezeile"
 
-#, fuzzy
 msgid "specify a merge-base for the merge"
-msgstr "Sie müssen eine Notiz-Referenz zum Mergen angeben."
+msgstr "Merge-Basis für den Merge angeben"
 
 msgid "--trivial-merge is incompatible with all other options"
 msgstr "--trivial-merge ist mit allen anderen Optionen inkompatibel"
 
-#, fuzzy
 msgid "--merge-base is incompatible with --stdin"
-msgstr "%s ist inkompatibel mit %s."
+msgstr "--merge-base ist inkompatibel mit --stdin"
 
 #, c-format
 msgid "malformed input line: '%s'."
@@ -10507,11 +10494,15 @@ msgid ""
 "apply options are incompatible with rebase.autosquash.  Consider adding --no-"
 "autosquash"
 msgstr ""
+"apply-Optionen sind mit rebase.autosquash nicht kompatibel. Erwägen Sie das "
+"Hinzufügen von --no-autosquash"
 
 msgid ""
 "apply options are incompatible with rebase.updateRefs.  Consider adding --no-"
 "update-refs"
 msgstr ""
+"apply-Optionen sind nicht kompatibel mit rebase.updateRefs. Erwägen Sie das "
+"Hinzufügen von --no-update-refs"
 
 #, c-format
 msgid "Unknown rebase backend: %s"
@@ -13832,9 +13823,9 @@ msgstr "nur nützlich für Fehlersuche"
 msgid "core.fsyncMethod = batch is unsupported on this platform"
 msgstr "core.fsyncMethod = batch wird auf dieser Plattform nicht unterstützt"
 
-#, fuzzy, c-format
+#, c-format
 msgid "could not parse bundle list key %s with value '%s'"
-msgstr "Konnte Konflikt-Blöcke in '%s' nicht parsen."
+msgstr "Konnte Bundle-Listenschlüssel %s mit Wert '%s' nicht parsen."
 
 #, c-format
 msgid "bundle list at '%s' has no mode"
@@ -13846,13 +13837,12 @@ msgstr "temporäre Datei kann nicht erstellt werden"
 msgid "insufficient capabilities"
 msgstr "unzureichende Fähigkeiten"
 
-#, fuzzy, c-format
+#, c-format
 msgid "file downloaded from '%s' is not a bundle"
-msgstr "Datei unter URI '%s' ist kein Paket oder keine Paketliste"
+msgstr "die von '%s' heruntergeladene Datei ist kein Bundle"
 
-#, fuzzy
 msgid "failed to store maximum creation token"
-msgstr "Fehler beim Starten der Iteration über '%s'"
+msgstr "das maximale Erstellungs-Token konnte nicht gespeichert werden"
 
 #, c-format
 msgid "unrecognized bundle mode from URI '%s'"
@@ -13870,13 +13860,12 @@ msgstr "Download des Bundles von URI '%s' fehlgeschlagen"
 msgid "file at URI '%s' is not a bundle or bundle list"
 msgstr "Datei unter URI '%s' ist kein Paket oder keine Paketliste"
 
-#, fuzzy, c-format
+#, c-format
 msgid "bundle-uri: unexpected argument: '%s'"
-msgstr "nicht erkanntes Argument: %s"
+msgstr "bundle-uri: unerwartetes Argument: '%s'"
 
-#, fuzzy
 msgid "bundle-uri: expected flush after arguments"
-msgstr "object-info: erwartete Flush nach Argumenten"
+msgstr "bundle-uri: erwarteter Flush nach Argumenten"
 
 msgid "bundle-uri: got an empty line"
 msgstr "bundle-uri: erhielt eine leere Zeile"
@@ -13913,6 +13902,8 @@ msgid ""
 "some prerequisite commits exist in the object store, but are not connected "
 "to the repository's history"
 msgstr ""
+"einige vorausgesetzte Commits sind im Objektspeicher vorhanden, aber sind "
+"nicht mit der Repository-Historie verbunden"
 
 #, c-format
 msgid "The bundle contains this ref:"
@@ -15367,11 +15358,10 @@ msgstr "unbekanntes Objekt-Format '%s' vom Server angegeben"
 
 #, c-format
 msgid "error on bundle-uri response line %d: %s"
-msgstr ""
+msgstr "Fehler in der bundle-uri-Antwortzeile %d: %s"
 
-#, fuzzy
 msgid "expected flush after bundle-uri listing"
-msgstr "Flush nach Auflistung der Referenzen erwartet"
+msgstr "erwartete Flush nach Bundle-uri-Auflistung"
 
 msgid "expected response end packet after ref listing"
 msgstr "Antwort-Endpaket nach Auflistung der Referenzen erwartet"
@@ -16553,7 +16543,6 @@ msgstr ""
 "Socket-Verzeichnis '%s' ist mit fsmonitor inkompatibel, da es keine Unix-"
 "Sockets unterstützt"
 
-#, fuzzy
 msgid ""
 "git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n"
 "           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n"
@@ -16567,8 +16556,7 @@ msgstr ""
 "           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--"
 "bare]\n"
 "           [--git-dir=<Pfad>] [--work-tree=<Pfad>] [--namespace=<Name>]\n"
-"           [--super-prefix=<Pfad>] [--config-env=<Name>=<Variable>]\n"
-"           <Befehl> [<Argumente>]"
+"           [--config-env=<Name>=<Umgebungsvariable>] <Befehl> [<Argumente>]"
 
 msgid ""
 "'git help -a' and 'git help -g' list available subcommands and some\n"
@@ -16708,11 +16696,13 @@ msgstr ""
 msgid "gpg.ssh.defaultKeyCommand failed: %s %s"
 msgstr "gpg.ssh.defaultKeyCommand fehlgeschlagen: %s %s"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "gpg failed to sign the data:\n"
 "%s"
-msgstr "gpg beim Signieren der Daten fehlgeschlagen"
+msgstr ""
+"gpg konnte die Daten nicht signieren:\n"
+"%s"
 
 msgid "user.signingKey needs to be set for ssh signing"
 msgstr "user.signingKey muss für die SSH-Signatur gesetzt sein"
@@ -17885,9 +17875,9 @@ msgstr "Fehlerhaftes loses Objekt '%s'."
 msgid "garbage at end of loose object '%s'"
 msgstr "Nutzlose Daten am Ende von losem Objekt '%s'."
 
-#, fuzzy, c-format
+#, c-format
 msgid "unable to open loose object %s"
-msgstr "konnte loses Objekt nicht erzwingen"
+msgstr "loses Objekt %s kann nicht geöffnet werden"
 
 #, c-format
 msgid "unable to parse %s header"
@@ -17971,13 +17961,12 @@ msgstr "Verzeichnis %s kann nicht erstellt werden"
 msgid "cannot read object for %s"
 msgstr "Kann Objekt für %s nicht lesen."
 
-#, fuzzy, c-format
+#, c-format
 msgid "object fails fsck: %s"
-msgstr "Objektdatei %s ist leer."
+msgstr "fsck schlägt bei Objekt fehl: %s"
 
-#, fuzzy
 msgid "refusing to create malformed object"
-msgstr "Erstellung eines leeren Pakets zurückgewiesen."
+msgstr "verweigere Erstellung eines ungültigen Objekts"
 
 #, c-format
 msgid "read error while indexing %s"
@@ -18513,9 +18502,8 @@ msgstr "weniger Ausgaben"
 msgid "use <n> digits to display object names"
 msgstr "benutze <Anzahl> Ziffern zur Anzeige von Objektnamen"
 
-#, fuzzy
 msgid "prefixed path to initial superproject"
-msgstr "Fehler beim Initialisieren vom partiellen Checkout."
+msgstr "vorangestellter Pfad zum ursprünglichen Superprojekt"
 
 msgid "how to strip spaces and #comments from message"
 msgstr ""
@@ -19023,13 +19011,13 @@ msgstr "%d hinterher"
 msgid "ahead %d, behind %d"
 msgstr "%d voraus, %d hinterher"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%%(%.*s) does not take arguments"
-msgstr "%%(rest) akzeptiert keine Argumente"
+msgstr "%%(%.*s) nimmt keine Argumente entgegen"
 
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized %%(%.*s) argument: %s"
-msgstr "nicht erkanntes %%(%s) Argument: %s"
+msgstr "nicht erkanntes %%(%.*s) Argument: %s"
 
 #, c-format
 msgid "expected format: %%(color:<color>)"
@@ -20347,21 +20335,23 @@ msgstr "git %s: Fehler beim Lesen des Index"
 msgid "git %s: failed to refresh the index"
 msgstr "git %s: Fehler beim Aktualisieren des Index"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid label"
-msgstr "'%s' ist kein gültiger Begriff"
+msgstr "'%s' ist keine gültige Beschriftung"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid refname"
-msgstr "'%s' ist kein gültiger Referenzname."
+msgstr "'%s' ist kein gültiger Referenzname"
 
 #, c-format
 msgid "update-ref requires a fully qualified refname e.g. refs/heads/%s"
 msgstr ""
+"update-ref erfordert einen vollständig qualifizierten Referenznamen, z. B. "
+"refs/heads/%s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "invalid command '%.*s'"
-msgstr "ungültiger Commit %s"
+msgstr "ungültiger Befehl '%.*s'"
 
 #, c-format
 msgid "%s does not accept arguments: '%s'"
@@ -21177,15 +21167,14 @@ msgid "failed to lstat '%s'"
 msgstr "'lstat' für '%s' fehlgeschlagen"
 
 msgid "no remote configured to get bundle URIs from"
-msgstr ""
+msgstr "kein Remote-Repository zum Erhalten von Bundle-URIs konfiguriert"
 
 #, c-format
 msgid "remote '%s' has no configured URL"
-msgstr ""
+msgstr "Remote-Repository '%s' hat keine konfigurierte URL"
 
-#, fuzzy
 msgid "could not get the bundle-uri list"
-msgstr "Konnte TODO-Liste nicht erzeugen."
+msgstr "konnte die Bundle-uri-Liste nicht erhalten"
 
 msgid "test-tool cache-tree <options> (control|prime|update)"
 msgstr "test-tool cache-tree <Optionen> (control|prime|update)"
@@ -21542,12 +21531,11 @@ msgstr "Abbruch."
 msgid "failed to push all needed submodules"
 msgstr "Fehler beim Versand aller erforderlichen Submodule."
 
-#, fuzzy
 msgid "bundle-uri operation not supported by protocol"
-msgstr "die Operation wird von dem Protokoll nicht unterstützt"
+msgstr "bundle-uri Operation wird vom Protokoll nicht unterstützt"
 
 msgid "could not retrieve server-advertised bundle-uri list"
-msgstr ""
+msgstr "konnte die vom Server angekündigte bundle-uri-Liste nicht abrufen"
 
 msgid "too-short tree object"
 msgstr "zu kurzes Tree-Objekt"
@@ -22339,13 +22327,19 @@ msgid ""
 "It took %.2f seconds to enumerate untracked files,\n"
 "but the results were cached, and subsequent runs may be faster."
 msgstr ""
+"Es dauerte %.2f Sekunden, um die unversionierten Dateien aufzuzählen,\n"
+"aber die Ergebnisse wurden zwischengespeichert, sodass spätere Durchläufe "
+"schneller sein können."
 
 #, c-format
 msgid "It took %.2f seconds to enumerate untracked files."
 msgstr ""
+"Es hat %.2f Sekunden gedauert, um die unversionierten Dateien aufzuzählen."
 
 msgid "See 'git help status' for information on how to improve this."
 msgstr ""
+"Siehe 'git help status' für Informationen darüber, wie man dies verbessern "
+"kann."
 
 #, c-format
 msgid "Untracked files not listed%s"
