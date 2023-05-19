@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2023-05-18 14:03+0200\n"
-"PO-Revision-Date: 2023-03-03 13:46+0100\n"
+"PO-Revision-Date: 2023-05-18 14:38+0200\n"
 "Last-Translator: Ralf Thielow <ralf.thielow@gmail.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 
 #, c-format
 msgid "Huh (%s)?"
@@ -697,6 +697,14 @@ msgid ""
 "\n"
 "\tgit rebase\n"
 msgstr ""
+"Abweichende Branches können nicht vorgespult werden, benutzen Sie "
+"stattdessen:\n"
+"\n"
+"\tgit merge --no-ff\n"
+"\n"
+"oder:\n"
+"\n"
+"\tgit rebase\n"
 
 msgid "Not possible to fast-forward, aborting."
 msgstr "Vorspulen nicht möglich, breche ab."
@@ -1357,6 +1365,7 @@ msgstr "kann '%s' nicht lesen"
 #, c-format
 msgid "pathspec '%s' matches files outside the current directory"
 msgstr ""
+"Pfadspezifikation '%s' findet Dateien außerhalb des aktuellen Verzeichnisses"
 
 #, c-format
 msgid "pathspec '%s' did not match any files"
@@ -1680,12 +1689,10 @@ msgstr ""
 msgid "not tracking: ambiguous information for ref '%s'"
 msgstr "kein Tracking: mehrdeutige Informationen für Referenz '%s'"
 
-#. #-#-#-#-#  branch.c.po  #-#-#-#-#
 #. TRANSLATORS: This is a line listing a remote with duplicate
 #. refspecs in the advice message below. For RTL languages you'll
 #. probably want to swap the "%s" and leading "  " space around.
 #.
-#. #-#-#-#-#  object-name.c.po  #-#-#-#-#
 #. TRANSLATORS: This is line item of ambiguous object output
 #. from describe_ambiguous_object() above. For RTL languages
 #. you'll probably want to swap the "%s" and leading " " space
@@ -2855,11 +2862,13 @@ msgstr "Kann Branch '%s' nicht entfernen, ausgecheckt in '%s'."
 msgid "remote-tracking branch '%s' not found."
 msgstr "Remote-Tracking-Branch '%s' nicht gefunden"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "branch '%s' not found.\n"
 "Did you forget --remote?"
-msgstr "Branch '%s' nicht gefunden."
+msgstr ""
+"Branch '%s' nicht gefunden.\n"
+"Haben Sie --remote vergessen?"
 
 #, c-format
 msgid "branch '%s' not found."
@@ -3001,7 +3010,7 @@ msgstr ""
 "einen Branch verschieben/umbenennen, auch wenn das Ziel bereits existiert"
 
 msgid "do not output a newline after empty formatted refs"
-msgstr ""
+msgstr "keinen Zeilenumbruch nach leer formatierten Referenzen ausgeben"
 
 msgid "copy a branch and its reflog"
 msgstr "einen Branch und dessen Reflog kopieren"
@@ -3231,13 +3240,11 @@ msgstr "konnte nicht nach %s schreiben"
 msgid "Created new report at '%s'.\n"
 msgstr "Neuer Bericht unter '%s' erstellt.\n"
 
-#, fuzzy
 msgid ""
 "git bundle create [-q | --quiet | --progress]\n"
 "                  [--version=<version>] <file> <git-rev-list-args>"
 msgstr ""
-"git bundle create [-q | --quiet | --progress | --all-progress] [--all-"
-"progress-implied]\n"
+"git bundle create [-q | --quiet | --progress]\n"
 "                  [--version=<Version>] <Datei> <git-rev-list-Argumente>"
 
 msgid "git bundle verify [-q | --quiet] <file>"
@@ -3259,11 +3266,10 @@ msgid "show progress meter"
 msgstr "Fortschrittsanzeige anzeigen"
 
 msgid "historical; same as --progress"
-msgstr ""
+msgstr "historisch; dasselbe wie --progress"
 
-#, fuzzy
 msgid "historical; does nothing"
-msgstr "historische Option -- kein Effekt"
+msgstr "historisch; kein Effekt"
 
 msgid "specify bundle format version"
 msgstr "Version des Paket-Formats angeben"
@@ -4295,10 +4301,10 @@ msgstr "Konnte '%s' nicht lesen"
 msgid "%s exists and is not a directory"
 msgstr "%s existiert und ist kein Verzeichnis"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is a symlink, refusing to clone with --local"
 msgstr ""
-"symbolische Verknüpfung '%s' existiert, verweigere das Klonen mit --local"
+"'%s' ist eine symbolische Verknüpfung, verweigere das Klonen mit --local"
 
 #, c-format
 msgid "failed to start iterator over '%s'"
@@ -6265,13 +6271,11 @@ msgstr "nur Referenzen ausgeben, die diesen Commit enthalten"
 msgid "print only refs which don't contain the commit"
 msgstr "nur Referenzen ausgeben, die diesen Commit nicht enthalten"
 
-#, fuzzy
 msgid "read reference patterns from stdin"
-msgstr "Muster von der Standard-Eingabe lesen"
+msgstr "Referenzmuster von Standard-Eingabe lesen"
 
-#, fuzzy
 msgid "unknown arguments supplied with --stdin"
-msgstr "-z kann nur mit --stdin verwendet werden"
+msgstr "unbekannte Argumente mit --stdin geliefert"
 
 msgid "git for-each-repo --config=<config> [--] <arguments>"
 msgstr "git for-each-repo --config=<Konfiguration> [--] <Argumente>"
@@ -6285,9 +6289,9 @@ msgstr "Konfigurationsschlüssel für eine Liste von Repository-Pfaden"
 msgid "missing --config=<config>"
 msgstr "Option --config=<Konfiguration> fehlt"
 
-#, fuzzy, c-format
+#, c-format
 msgid "got bad config --config=%s"
-msgstr "Ungültige Konfigurationszeile %d in %s"
+msgstr "ungültige Konfiguration --config=%s"
 
 msgid "unknown"
 msgstr "unbekannt"
@@ -6435,28 +6439,28 @@ msgstr "%s: losgelöster HEAD zeigt auf nichts"
 msgid "notice: %s points to an unborn branch (%s)"
 msgstr "Notiz: %s zeigt auf einen ungeborenen Branch (%s)"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Checking cache tree of %s"
-msgstr "Prüfe Cache-Verzeichnis"
+msgstr "Prüfe Cache-Verzeichnis von %s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid sha1 pointer in cache-tree of %s"
-msgstr "%s: Ungültiger SHA1-Zeiger in Cache-Verzeichnis"
+msgstr "%s: ungültiger SHA1-Zeiger im Cache-Verzeichnis von %s"
 
 msgid "non-tree in cache-tree"
 msgstr "non-tree in Cache-Verzeichnis"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid sha1 pointer in resolve-undo of %s"
-msgstr "%s: Ungültiger sha1-Zeiger in resolve-undo"
+msgstr "%s: ungültiger SHA1-Zeiger in resolve-undo von %s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "unable to load rev-index for pack '%s'"
-msgstr "Fehler beim Laden des Pack-Index für Packdatei %s"
+msgstr "rev-Index für Pack-Datei '%s' kann nicht geladen werden"
 
-#, fuzzy, c-format
+#, c-format
 msgid "invalid rev-index for pack '%s'"
-msgstr "ungültiger Wert für '%s'"
+msgstr "ungültiger Rev-Index für Pack-Datei '%s'"
 
 msgid ""
 "git fsck [--tags] [--root] [--unreachable] [--cache] [--no-reflogs]\n"
@@ -6880,7 +6884,6 @@ msgstr "grep: Fehler beim Erzeugen eines Thread: %s"
 msgid "invalid number of threads specified (%d) for %s"
 msgstr "ungültige Anzahl von Threads (%d) für %s angegeben"
 
-#. #-#-#-#-#  grep.c.po  #-#-#-#-#
 #. TRANSLATORS: %s is the configuration
 #. variable for tweaking threads, currently
 #. grep.threads
@@ -9584,7 +9587,7 @@ msgstr ""
 "<git@vger.kernel.org> senden. Danke.\n"
 
 msgid "refusing to run without --i-still-use-this"
-msgstr ""
+msgstr "Ausführung ohne --i-still-use-this verweigert"
 
 msgid "git pack-refs [--all] [--no-prune]"
 msgstr "git pack-refs [--all] [--no-prune]"
@@ -10018,9 +10021,8 @@ msgstr "ungültiger Wert für '%s'"
 msgid "repository"
 msgstr "Repository"
 
-#, fuzzy
 msgid "push all branches"
-msgstr "alle Referenzen versenden"
+msgstr "alle Branches versenden"
 
 msgid "mirror all refs"
 msgstr "alle Referenzen spiegeln"
@@ -10028,9 +10030,8 @@ msgstr "alle Referenzen spiegeln"
 msgid "delete refs"
 msgstr "Referenzen löschen"
 
-#, fuzzy
 msgid "push tags (can't be used with --all or --branches or --mirror)"
-msgstr "Tags versenden (kann nicht mit --all oder --mirror verwendet werden)"
+msgstr "Tags versenden (kann nicht mit --all, --branches oder --mirror verwendet werden)"
 
 msgid "force updates"
 msgstr "Aktualisierung erzwingen"
@@ -10299,9 +10300,9 @@ msgstr ""
 "Infolge dessen kann Git auf diesen Revisionen Rebase nicht\n"
 "ausführen."
 
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown rebase-merges mode: %s"
-msgstr "Unbekanntes Rebase-Backend: %s"
+msgstr "Unbekannter rebase-merges Modus: %s"
 
 #, c-format
 msgid "could not switch to %s"
@@ -10325,6 +10326,9 @@ msgid ""
 "working in a future version of Git. Use --rebase-merges without an argument "
 "instead, which does the same thing."
 msgstr ""
+"--rebase-merges mit einem leeren String-Argument ist veraltet und wird in "
+"einer zukünftigen Version von Git nicht mehr funktionieren. Verwenden Sie "
+"stattdessen --rebase-merges ohne ein Argument, was dasselbe bewirkt."
 
 #, c-format
 msgid ""
@@ -10554,21 +10558,19 @@ msgstr "Schalter `C' erwartet einen numerischen Wert."
 msgid "--strategy requires --merge or --interactive"
 msgstr "--strategy erfordert --merge oder --interactive"
 
-#, fuzzy
 msgid ""
 "apply options are incompatible with rebase.autoSquash.  Consider adding --no-"
 "autosquash"
 msgstr ""
-"apply-Optionen sind mit rebase.autosquash nicht kompatibel. Erwägen Sie das "
+"apply-Optionen sind mit rebase.autoSquash nicht kompatibel. Erwägen Sie das "
 "Hinzufügen von --no-autosquash"
 
-#, fuzzy
 msgid ""
 "apply options are incompatible with rebase.rebaseMerges.  Consider adding --"
 "no-rebase-merges"
 msgstr ""
-"apply-Optionen sind nicht kompatibel mit rebase.updateRefs. Erwägen Sie das "
-"Hinzufügen von --no-update-refs"
+"apply-Optionen sind nicht kompatibel mit rebase.rebaseMerges. Erwägen Sie "
+"das Hinzufügen von --no-rebase-merges"
 
 msgid ""
 "apply options are incompatible with rebase.updateRefs.  Consider adding --no-"
@@ -11291,9 +11293,8 @@ msgstr "genau wie -a, unerreichbare überflüssige Objekte separat packen"
 msgid "approxidate"
 msgstr "Datumsangabe"
 
-#, fuzzy
 msgid "with --cruft, expire objects older than this"
-msgstr "mit -C, Objekte älter als angegeben verfallen lassen"
+msgstr "mit --cruft, Objekte verfallen lassen, die älter sind als das"
 
 msgid "remove redundant packs, and run git-prune-packed"
 msgstr "redundante Pakete entfernen und \"git-prune-packed\" ausführen"
@@ -12180,13 +12181,12 @@ msgstr ""
 "Referenzen von der Standard-Eingabe anzeigen, die sich nicht im lokalen "
 "Repository befinden"
 
-#, fuzzy
 msgid ""
 "git sparse-checkout (init | list | set | add | reapply | disable | check-"
 "rules) [<options>]"
 msgstr ""
-"git sparse-checkout (init | list | set | add | reapply | disable) "
-"[<Optionen>]"
+"git sparse-checkout (init | list | set | add | reapply | disable | check-"
+"rules) [<Optionen>]"
 
 msgid "this worktree is not sparse"
 msgstr "dieses Arbeitsverzeichnis ist nicht partiell"
@@ -12317,22 +12317,23 @@ msgstr ""
 msgid "error while refreshing working directory"
 msgstr "Fehler während der Aktualisierung des Arbeitsverzeichnisses."
 
-#, fuzzy
 msgid ""
 "git sparse-checkout check-rules [-z] [--skip-checks][--[no-]cone] [--rules-"
 "file <file>]"
-msgstr "git sparse-checkout add [--skip-checks] (--stdin | <Muster>)"
+msgstr ""
+"git sparse-checkout check-rules [-z] [--skip-checks][--[no-]cone] [--rules-"
+"file <Datei>]"
 
-#, fuzzy
 msgid "terminate input and output files by a NUL character"
-msgstr "Einträge von Ein- und Ausgabe mit NUL-Zeichen abschließen"
+msgstr "Eingabe- und Ausgabedateien durch ein NUL-Zeichen abschließen"
 
 msgid "when used with --rules-file interpret patterns as cone mode patterns"
 msgstr ""
+"bei Verwendung mit --rules-file werden die Muster als Cone-Modus Muster "
+"interpretiert"
 
-#, fuzzy
 msgid "use patterns in <file> instead of the current ones."
-msgstr "im Index statt im Arbeitsverzeichnis suchen"
+msgstr "Muster aus <Datei> anstelle der aktuellen Muster verwenden"
 
 msgid "git stash list [<log-options>]"
 msgstr "git stash list [<log-Optionen>]"
@@ -15274,9 +15275,8 @@ msgstr "Länge für Abkürzung von Commit-IDs außerhalb des Bereichs: %d"
 msgid "bad zlib compression level %d"
 msgstr "ungültiger zlib Komprimierungsgrad %d"
 
-#, fuzzy
 msgid "core.commentChar should only be one ASCII character"
-msgstr "core.commentChar sollte nur ein Zeichen sein"
+msgstr "core.commentChar sollte nur ein ASCII-Zeichen sein"
 
 #, c-format
 msgid "ignoring unknown core.fsyncMethod value '%s'"
@@ -15396,6 +15396,7 @@ msgstr "Ungültiger Sektionsname: %s"
 #, c-format
 msgid "refusing to work with overly long line in '%s' on line %<PRIuMAX>"
 msgstr ""
+"Ausführung mit übermäßig langer Zeile in '%s' bei Zeile %<PRIuMAX> verweigert"
 
 #, c-format
 msgid "missing value for '%s'"
@@ -16078,9 +16079,8 @@ msgstr "einen zusätzlichen Präfix bei jeder Ausgabezeile voranstellen"
 msgid "do not show any source or destination prefix"
 msgstr "keine Quell- oder Ziel-Präfixe anzeigen"
 
-#, fuzzy
 msgid "use default prefixes a/ and b/"
-msgstr "--default benötigt ein Argument"
+msgstr "Standardpräfixe a/ und b/ verwenden"
 
 msgid "show context between diff hunks up to the specified number of lines"
 msgstr ""
@@ -17392,7 +17392,7 @@ msgstr ""
 #. conflict in a submodule. The first argument is the submodule
 #. name, and the second argument is the abbreviated id of the
 #. commit that needs to be merged.  For example:
-#.  - go to submodule (mysubmodule), and either merge commit abc1234"
+#. - go to submodule (mysubmodule), and either merge commit abc1234"
 #.
 #, c-format
 msgid ""
@@ -18133,7 +18133,7 @@ msgstr "%s [ungültiges Objekt]"
 #. TRANSLATORS: This is a line of ambiguous commit
 #. object output. E.g.:
 #. *
-#.    "deadbeef commit 2021-01-01 - Some Commit Message"
+#. "deadbeef commit 2021-01-01 - Some Commit Message"
 #.
 #, c-format
 msgid "%s commit %s - %s"
@@ -18142,7 +18142,7 @@ msgstr "%s Commit %s - %s"
 #. TRANSLATORS: This is a line of ambiguous
 #. tag object output. E.g.:
 #. *
-#.    "deadbeef tag 2022-01-01 - Some Tag Message"
+#. "deadbeef tag 2022-01-01 - Some Tag Message"
 #. *
 #. The second argument is the YYYY-MM-DD found
 #. in the tag.
@@ -18158,7 +18158,7 @@ msgstr "%s Tag %s - %s"
 #. tag object output where we couldn't parse
 #. the tag itself. E.g.:
 #. *
-#.    "deadbeef [bad tag, could not parse it]"
+#. "deadbeef [bad tag, could not parse it]"
 #.
 #, c-format
 msgid "%s [bad tag, could not parse it]"
@@ -18415,7 +18415,7 @@ msgstr "Festplattennutzung von '%s' kann nicht abgerufen werden"
 
 #, c-format
 msgid "bitmap file '%s' has invalid checksum"
-msgstr ""
+msgstr "Bitmap-Datei '%s' hat eine ungültige Prüfsumme"
 
 #, c-format
 msgid "mtimes file %s is too small"
@@ -18457,13 +18457,12 @@ msgstr "Reverse-Index-Datei %s hat nicht unterstützte Version %<PRIu32>"
 msgid "reverse-index file %s has unsupported hash id %<PRIu32>"
 msgstr "Reverse-Index-Datei %s hat nicht unterstützte Hash-ID %<PRIu32>"
 
-#, fuzzy
 msgid "invalid checksum"
-msgstr "Ungültiger Objekt-Typ %s"
+msgstr "ungültige Prüfsumme"
 
 #, c-format
 msgid "invalid rev-index position at %<PRIu64>: %<PRIu32> != %<PRIu32>"
-msgstr ""
+msgstr "ungültige rev-index Position bei %<PRIu64>: %<PRIu32> != %<PRIu32>"
 
 msgid "cannot both write and verify reverse index"
 msgstr ""
@@ -19193,9 +19192,9 @@ msgstr "nicht erkanntes %%(%s) Argument: %s"
 msgid "positive width expected with the %%(align) atom"
 msgstr "Positive Breitenangabe für %%(align) erwartet"
 
-#, fuzzy, c-format
+#, c-format
 msgid "expected format: %%(ahead-behind:<committish>)"
-msgstr "erwartetes Format: %%(align:<Breite>,<Position>)"
+msgstr "erwartetes Format: %%(ahead-behind:<Commit>)"
 
 #, c-format
 msgid "malformed field name: %.*s"
@@ -20638,11 +20637,10 @@ msgstr ""
 "\n"
 "ausführen.\n"
 
-#, fuzzy
 msgid "and made changes to the index and/or the working tree.\n"
-msgstr "Der Index und/oder das Arbeitsverzeichnis wurde geändert.\n"
+msgstr "und Änderungen am Index und/oder am Arbeitsverzeichnis vorgenommen.\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "execution succeeded: %s\n"
 "but left changes to the index and/or the working tree.\n"
@@ -20652,7 +20650,7 @@ msgid ""
 "\n"
 msgstr ""
 "Ausführung erfolgreich: %s\n"
-"Aber Änderungen in Index oder Arbeitsverzeichnis verblieben.\n"
+"Aber es sind Änderungen im Index oder Arbeitsverzeichnis verblieben.\n"
 "Committen Sie Ihre Änderungen oder benutzen Sie \"stash\".\n"
 "Führen Sie dann aus:\n"
 "\n"
@@ -22905,9 +22903,9 @@ msgstr "(body) Füge cc: hinzu: %s von Zeile '%s'\n"
 msgid "(%s) Could not execute '%s'"
 msgstr "(%s) Konnte '%s' nicht ausführen"
 
-#, fuzzy, perl-format
+#, perl-format
 msgid "(%s) Malformed output from '%s'"
-msgstr "Fehlerhafte Eingabezeile: '%s'."
+msgstr "(%s) Fehlerhafte Ausgabe von '%s'"
 
 #, perl-format
 msgid "(%s) failed to close pipe to '%s'"
