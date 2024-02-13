@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-02-12 08:04+0100\n"
-"PO-Revision-Date: 2023-11-10 14:28+0100\n"
+"POT-Creation-Date: 2024-02-12 07:04+0100\n"
+"PO-Revision-Date: 2024-02-12 17:41+0100\n"
 "Last-Translator: Ralf Thielow <ralf.thielow@gmail.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -1473,9 +1473,9 @@ msgstr "die Option '%s' erfordert '%s'"
 msgid "Unexpected option --output"
 msgstr "Unerwartete Option --output"
 
-#, fuzzy, c-format
+#, c-format
 msgid "extra command line parameter '%s'"
-msgstr "Fehlerhafter Konfigurationsparameter: %s"
+msgstr "zusätzlicher Befehlszeilenparameter '%s'"
 
 #, c-format
 msgid "Unknown archive format '%s'"
@@ -1706,12 +1706,10 @@ msgstr ""
 msgid "not tracking: ambiguous information for ref '%s'"
 msgstr "kein Tracking: mehrdeutige Informationen für Referenz '%s'"
 
-#. #-#-#-#-#  branch.c.po  #-#-#-#-#
 #. TRANSLATORS: This is a line listing a remote with duplicate
 #. refspecs in the advice message below. For RTL languages you'll
 #. probably want to swap the "%s" and leading "  " space around.
 #.
-#. #-#-#-#-#  object-name.c.po  #-#-#-#-#
 #. TRANSLATORS: This is line item of ambiguous object output
 #. from describe_ambiguous_object() above. For RTL languages
 #. you'll probably want to swap the "%s" and leading " " space
@@ -2837,16 +2835,15 @@ msgstr ""
 msgid "couldn't look up commit object for '%s'"
 msgstr "konnte Commit-Objekt für '%s' nicht nachschlagen"
 
-#, fuzzy, c-format
+#, c-format
 msgid "the branch '%s' is not fully merged"
-msgstr "Branch '%s' nicht gefunden"
+msgstr "der Branch '%s' ist nicht vollständig zusammengeführt"
 
-#, fuzzy, c-format
+#, c-format
 msgid "If you are sure you want to delete it, run 'git branch -D %s'"
 msgstr ""
-"Der Branch '%s' ist nicht vollständig zusammengeführt.\n"
-"Wenn Sie sicher sind diesen Branch zu entfernen, führen Sie 'git branch -D "
-"%s' aus."
+"Wenn Sie sicher sind, dass Sie den Branch löschen wollen, führen Sie 'git "
+"branch -D %s' aus."
 
 msgid "update of config-file failed"
 msgstr "Aktualisierung der Konfigurationsdatei fehlgeschlagen."
@@ -3915,9 +3912,8 @@ msgstr "Auschecken erzwingen (verwirft lokale Änderungen)"
 msgid "new-branch"
 msgstr "neuer Branch"
 
-#, fuzzy
 msgid "new unborn branch"
-msgstr "neuer Branch ohne Eltern-Commit"
+msgstr "neuer ungeborener Branch"
 
 msgid "update ignored files (default)"
 msgstr "ignorierte Dateien aktualisieren (Standard)"
@@ -4264,9 +4260,8 @@ msgstr ".git-Verzeichnis"
 msgid "separate git dir from working tree"
 msgstr "Git-Verzeichnis vom Arbeitsverzeichnis separieren"
 
-#, fuzzy
 msgid "specify the reference format to use"
-msgstr "das 'reference' Format nutzen, um auf Commits zu verweisen"
+msgstr "das zu verwendende Referenzformat angeben"
 
 msgid "key=value"
 msgstr "Schlüssel=Wert"
@@ -4391,9 +4386,9 @@ msgstr "Zu viele Argumente."
 msgid "You must specify a repository to clone."
 msgstr "Sie müssen ein Repository zum Klonen angeben."
 
-#, fuzzy, c-format
+#, c-format
 msgid "unknown ref storage format '%s'"
-msgstr "Unbekanntes Archivformat '%s'"
+msgstr "unbekanntes Speicherformat für Referenzen '%s'"
 
 #, c-format
 msgid "repository '%s' does not exist"
@@ -4529,7 +4524,6 @@ msgstr ""
 "git commit-graph verify [--object-dir <Verzeichnis>] [--shallow] [--"
 "[no-]progress]"
 
-#, fuzzy
 msgid ""
 "git commit-graph write [--object-dir <dir>] [--append]\n"
 "                       [--split[=<strategy>]] [--reachable | --stdin-packs | "
@@ -6902,7 +6896,6 @@ msgstr "grep: Fehler beim Erzeugen eines Thread: %s"
 msgid "invalid number of threads specified (%d) for %s"
 msgstr "ungültige Anzahl von Threads (%d) für %s angegeben"
 
-#. #-#-#-#-#  grep.c.po  #-#-#-#-#
 #. TRANSLATORS: %s is the configuration
 #. variable for tweaking threads, currently
 #. grep.threads
@@ -7477,7 +7470,6 @@ msgstr "--verify wurde ohne Namen der Paketdatei angegeben"
 msgid "fsck error in pack objects"
 msgstr "fsck Fehler beim Packen von Objekten"
 
-#, fuzzy
 msgid ""
 "git init [-q | --quiet] [--bare] [--template=<template-directory>]\n"
 "         [--separate-git-dir <git-dir>] [--object-format=<format>]\n"
@@ -7487,6 +7479,7 @@ msgid ""
 msgstr ""
 "git init [-q | --quiet] [--bare] [--template=<Vorlagenverzeichnis>]\n"
 "         [--separate-git-dir <Git-Verzeichnis>] [--object-format=<Format>]\n"
+"         [--ref-format=<Format>]\n"
 "         [-b <Branchname> | --initial-branch=<Branchname>]\n"
 "         [--shared[=<Berechtigungen>]] [<Verzeichnis>]"
 
@@ -9286,9 +9279,9 @@ msgstr "Komprimiere Objekte"
 msgid "inconsistency with delta count"
 msgstr "Inkonsistenz mit der Anzahl von Deltas"
 
-#, fuzzy, c-format
+#, c-format
 msgid "invalid pack.allowPackReuse value: '%s'"
-msgstr "Ungültiger Farbwert: %.*s"
+msgstr "ungültiger Wert für pack.allowPackReuse: '%s'"
 
 #, c-format
 msgid ""
@@ -9556,13 +9549,13 @@ msgstr "kann --stdin-packs nicht mit --cruft benutzen"
 msgid "Enumerating objects"
 msgstr "Objekte aufzählen"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Total %<PRIu32> (delta %<PRIu32>), reused %<PRIu32> (delta %<PRIu32>), pack-"
 "reused %<PRIu32> (from %<PRIuMAX>)"
 msgstr ""
 "Gesamt %<PRIu32> (Delta %<PRIu32>), Wiederverwendet %<PRIu32> (Delta "
-"%<PRIu32>), Pack wiederverwendet %<PRIu32>"
+"%<PRIu32>), Paket wiederverwendet %<PRIu32> (von %<PRIuMAX>)"
 
 msgid ""
 "'git pack-redundant' is nominated for removal.\n"
@@ -11586,69 +11579,76 @@ msgstr "--convert-graft-file erwartet keine Argumente"
 msgid "only one pattern can be given with -l"
 msgstr "Mit -l kann nur ein Muster angegeben werden"
 
-#, fuzzy
 msgid "need some commits to replay"
-msgstr "Benötige zwei Commit-Bereiche."
+msgstr "zum erneuten Abspielen werden Commits benötigt"
 
 msgid "--onto and --advance are incompatible"
-msgstr ""
+msgstr "--onto und --advance sind inkompatibel"
 
 msgid "all positive revisions given must be references"
-msgstr ""
+msgstr "alle angegebenen positiven Commits müssen Referenzen sein"
 
 msgid "argument to --advance must be a reference"
-msgstr ""
+msgstr "Argument für --advance muss eine Referenz sein"
 
 msgid ""
 "cannot advance target with multiple sources because ordering would be ill-"
 "defined"
 msgstr ""
+"kann Ziel nicht mit mehreren Quellen erweitern, da die Reihenfolge unklar "
+"wäre"
 
 msgid ""
 "cannot implicitly determine whether this is an --advance or --onto operation"
 msgstr ""
+"kann nicht implizit bestimmen, ob es sich um eine --advance oder --onto "
+"Operation handelt"
 
 msgid ""
 "cannot advance target with multiple source branches because ordering would "
 "be ill-defined"
 msgstr ""
+"kann Ziel nicht mit mehreren Quell-Branches erweitern, da die Reihenfolge "
+"unklar wäre"
 
 msgid "cannot implicitly determine correct base for --onto"
-msgstr ""
+msgstr "kann nicht implizit die richtige Basis für --onto bestimmen"
 
 msgid ""
 "(EXPERIMENTAL!) git replay ([--contained] --onto <newbase> | --advance "
 "<branch>) <revision-range>..."
 msgstr ""
+"(EXPERIMENTELL!) git replay ([--contained] --onto <neue-Basis> | --advance "
+"<Branch>) <Commitbereich>..."
 
 msgid "make replay advance given branch"
-msgstr ""
+msgstr "angegebenen Branch durch neues Abspielen erweitern"
 
 msgid "replay onto given commit"
-msgstr ""
+msgstr "auf angegebenen Commit neu abspielen"
 
 msgid "advance all branches contained in revision-range"
-msgstr ""
+msgstr "alle Branches erweitern, die in Commitbereich liegen"
 
 msgid "option --onto or --advance is mandatory"
-msgstr ""
+msgstr "Option --onto oder --advance erforderlich"
 
 #, c-format
 msgid ""
 "some rev walking options will be overridden as '%s' bit in 'struct rev_info' "
 "will be forced"
 msgstr ""
+"einige Optionen für das Abgehen von Commits werden außer Kraft gesetzt, da "
+"das '%s' Bit in 'struct rev_info' erzwungen wird"
 
 msgid "error preparing revisions"
 msgstr "Fehler beim Vorbereiten der Commits"
 
-#, fuzzy
 msgid "replaying down to root commit is not supported yet!"
-msgstr "das Schreiben in die Standard-Eingabe wird nicht unterstützt"
+msgstr "erneutes Abspielen bis zum Root-Commit wird noch nicht unterstützt!"
 
-#, fuzzy
 msgid "replaying merge commits is not supported yet!"
-msgstr "Das Bearbeiten von Blobs wird nicht unterstützt."
+msgstr "erneutes Abspielen von Merge-Commits wird noch nicht unterstützt!"
 
 msgid ""
 "git rerere [clear | forget <pathspec>... | diff | status | remaining | gc]"
@@ -13785,7 +13785,7 @@ msgstr "git worktree unlock <Arbeitsverzeichnis>"
 msgid "No possible source branch, inferring '--orphan'"
 msgstr "Kein möglicher Quell-Branch, der auf '--orphan' schließen lässt"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "If you meant to create a worktree containing a new unborn branch\n"
 "(branch with no commits) for this repository, you can do so\n"
@@ -13793,15 +13793,13 @@ msgid ""
 "\n"
 "    git worktree add --orphan -b %s %s\n"
 msgstr ""
-"Wenn Sie ein Arbeitsverzeichnis erstellen möchten, um einen neuen verwaisten "
-"Branch\n"
-"(Branch ohne Commits) für dieses Repository zu erstellen, können Sie dies "
-"mit\n"
-"der Option --orphan tun:\n"
+"Wenn Sie ein Arbeitsverzeichnis erstellen möchten, welches einen neuen\n"
+"ungeborenen Branch (Branch ohne Commits) für dieses Repository erzeugt,\n"
+"können Sie dies mit der Option --orphan tun:\n"
 "\n"
 "    git worktree add --orphan -b %s %s\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "If you meant to create a worktree containing a new unborn branch\n"
 "(branch with no commits) for this repository, you can do so\n"
@@ -13809,11 +13807,9 @@ msgid ""
 "\n"
 "    git worktree add --orphan %s\n"
 msgstr ""
-"Wenn Sie ein Arbeitsverzeichnis erstellen möchten, um einen neuen verwaisten "
-"Branch\n"
-"(Branch ohne Commits) für dieses Repository zu erstellen, können Sie dies "
-"mit\n"
-"der Option --orphan tun:\n"
+"Wenn Sie ein Arbeitsverzeichnis erstellen möchten, welches einen neuen\n"
+"ungeborenen Branch (Branch ohne Commits) für dieses Repository erzeugt,\n"
+"können Sie dies mit der Option --orphan tun:\n"
 "\n"
 "    git worktree add --orphan %s\n"
 
@@ -13875,9 +13871,9 @@ msgstr "Konnte Verzeichnis '%s' nicht erstellen."
 msgid "initializing"
 msgstr "initialisiere"
 
-#, fuzzy, c-format
+#, c-format
 msgid "could not find created worktree '%s'"
-msgstr "Konnte Arbeitsverzeichnis '%s' nicht erstellen"
+msgstr "konnte erstelltes Arbeitsverzeichnis '%s' nicht finden"
 
 #, c-format
 msgid "Preparing worktree (new branch '%s')"
@@ -13930,9 +13926,8 @@ msgstr "neuen Branch erstellen"
 msgid "create or reset a branch"
 msgstr "Branch erstellen oder umsetzen"
 
-#, fuzzy
 msgid "create unborn branch"
-msgstr "ungeborenen/verwaisten Branch erstellen"
+msgstr "ungeborenen Branch erzeugen"
 
 msgid "populate the new working tree"
 msgstr "das neue Arbeitsverzeichnis auschecken"
@@ -13956,9 +13951,9 @@ msgid "options '%s', '%s', and '%s' cannot be used together"
 msgstr ""
 "die Optionen '%s', '%s' und '%s' können nicht gemeinsam verwendet werden"
 
-#, fuzzy, c-format
+#, c-format
 msgid "option '%s' and commit-ish cannot be used together"
-msgstr "Option '%s' und Commit-Angaben können nicht gemeinsam verwendet werden"
+msgstr "Option '%s' und commit-ish können nicht gemeinsam verwendet werden"
 
 msgid "added with --lock"
 msgstr "mit --lock hinzugefügt"
@@ -14611,6 +14606,8 @@ msgstr "Referenzen für ersetzende Objekte erstellen, auflisten, löschen"
 
 msgid "EXPERIMENTAL: Replay commits on a new base, works with bare repos too"
 msgstr ""
+"EXPERIMENTELL: Commits auf neuer Basis abspielen, funktioniert auch mit Bare-"
+"Repositories"
 
 msgid "Generates a summary of pending changes"
 msgstr "eine Übersicht über ausstehende Änderungen generieren"
@@ -14856,35 +14853,31 @@ msgstr "Ein Werkzeug zur Verwaltung großer Git-Repositories"
 msgid "commit-graph file is too small"
 msgstr "Commit-Graph-Datei ist zu klein"
 
-#, fuzzy
 msgid "commit-graph oid fanout chunk is wrong size"
-msgstr "Commit-Graph Basis-Graph-Chunk ist zu klein"
+msgstr "Commit-Graph OID fanout Chunk hat die falsche Größe"
 
-#, fuzzy
 msgid "commit-graph fanout values out of order"
-msgstr "Commit-Graph hat fehlerhaften Fanout-Wert: fanout[%d] = %u != %u"
+msgstr "Commit-Graph fanout-Werte sind nicht in Ordnung"
 
-#, fuzzy
 msgid "commit-graph OID lookup chunk is the wrong size"
-msgstr "multi-pack-index OID-Lookup-Chunk hat die falsche Größe"
+msgstr "Commit-Graph OID Lookup Chunk hat die falsche Größe"
 
-#, fuzzy
 msgid "commit-graph commit data chunk is wrong size"
-msgstr "Commit-Graph Basis-Graph-Chunk ist zu klein"
+msgstr "Commit-Graph Commit Daten Chunk hat die falsche Größe"
 
-#, fuzzy
 msgid "commit-graph generations chunk is wrong size"
-msgstr "Commit-Graph Basis-Graph-Chunk ist zu klein"
+msgstr "Commit-Graph Generations Chunk hat die falsche Größe"
 
-#, fuzzy
 msgid "commit-graph changed-path index chunk is too small"
-msgstr "Commit-Graph Basis-Graph-Chunk ist zu klein"
+msgstr "Commit-Graph changed-path Index Chunk ist zu klein"
 
 #, c-format
 msgid ""
 "ignoring too-small changed-path chunk (%<PRIuMAX> < %<PRIuMAX>) in commit-"
 "graph file"
 msgstr ""
+"ignoriere zu kleinen Chunk für geänderte Pfade (%<PRIuMAX> < %<PRIuMAX>) in "
+"Commit-Graph-Datei"
 
 #, c-format
 msgid "commit-graph signature %X does not match signature %X"
@@ -14902,20 +14895,15 @@ msgstr "Hash-Version des Commit-Graph %X stimmt nicht mit Version %X überein"
 msgid "commit-graph file is too small to hold %u chunks"
 msgstr "Commit-Graph-Datei ist zu klein, um %u Chunks zu enthalten"
 
-#, fuzzy
 msgid "commit-graph required OID fanout chunk missing or corrupted"
-msgstr ""
-"multi-pack-index erforderlicher OID-Fanout-Chunk fehlt oder ist beschädigt"
+msgstr "Commit-Graph benötigter OID fanout Chunk fehlt oder ist beschädigt"
 
-#, fuzzy
 msgid "commit-graph required OID lookup chunk missing or corrupted"
-msgstr ""
-"multi-pack-index erforderlicher OID Lookup Chunk fehlt oder ist beschädigt"
+msgstr "Commit-Graph benötigter OID lookup Chunk fehlt oder ist beschädigt"
 
-#, fuzzy
 msgid "commit-graph required commit data chunk missing or corrupted"
 msgstr ""
-"multi-pack-index erforderlicher OID-Fanout-Chunk fehlt oder ist beschädigt"
+"Commit-Graph erforderlicher Commit-Daten Chunk fehlt oder ist beschädigt"
 
 msgid "commit-graph has no base graphs chunk"
 msgstr "Commit-Graph hat keinen Basis-Graph-Chunk"
@@ -14930,9 +14918,8 @@ msgstr "Commit-Graph Verkettung stimmt nicht überein"
 msgid "commit count in base graph too high: %<PRIuMAX>"
 msgstr "Anzahl der Commits im Basisgraph zu hoch: %<PRIuMAX>"
 
-#, fuzzy
 msgid "commit-graph chain file too small"
-msgstr "Commit-Graph-Datei ist zu klein"
+msgstr "Commit-Graph Chain-Datei zu klein"
 
 #, c-format
 msgid "invalid commit-graph chain: line '%s' not a hash"
@@ -14955,7 +14942,7 @@ msgid "commit-graph overflow generation data is too small"
 msgstr "Commit-Graph Überlaufgenerierungsdaten sind zu klein"
 
 msgid "commit-graph extra-edges pointer out of bounds"
-msgstr ""
+msgstr "commit-graph extra-edges Zeiger außerhalb der Grenzen"
 
 msgid "Loading known commits in commit graph"
 msgstr "Lade bekannte Commits in Commit-Graph"
@@ -16265,7 +16252,7 @@ msgid "synonym for --dirstat=cumulative"
 msgstr "Synonym für --dirstat=cumulative"
 
 msgid "synonym for --dirstat=files,param1,param2..."
-msgstr "Synonym für --dirstat=files,Parameter1,Parameter2..."
+msgstr "Synonym für --dirstat=files,param1,param2..."
 
 msgid "warn if changes introduce conflict markers or whitespace errors"
 msgstr ""
@@ -17661,7 +17648,7 @@ msgstr ""
 #. conflict in a submodule. The first argument is the submodule
 #. name, and the second argument is the abbreviated id of the
 #. commit that needs to be merged.  For example:
-#.  - go to submodule (mysubmodule), and either merge commit abc1234"
+#. - go to submodule (mysubmodule), and either merge commit abc1234"
 #.
 #, c-format
 msgid ""
@@ -18019,13 +18006,12 @@ msgstr "Falsche Reihenfolge bei Multi-Pack-Index Pack-Namen: '%s' vor '%s'"
 msgid "bad pack-int-id: %u (%u total packs)"
 msgstr "Ungültige pack-int-id: %u (%u Pakete insgesamt)"
 
-#, fuzzy
 msgid "MIDX does not contain the BTMP chunk"
-msgstr "Schlüssel enthält keine Sektion: %s"
+msgstr "MIDX enthält keinen BTMP-Chunk"
 
-#, fuzzy, c-format
+#, c-format
 msgid "could not load bitmapped pack %<PRIu32>"
-msgstr "konnte Paket '%s' nicht öffnen"
+msgstr "konnte Bitmap-Paket nicht laden %<PRIu32>"
 
 msgid "multi-pack-index stores a 64-bit offset, but off_t is too small"
 msgstr ""
@@ -18426,7 +18412,7 @@ msgstr "%s [ungültiges Objekt]"
 #. TRANSLATORS: This is a line of ambiguous commit
 #. object output. E.g.:
 #. *
-#.    "deadbeef commit 2021-01-01 - Some Commit Message"
+#. "deadbeef commit 2021-01-01 - Some Commit Message"
 #.
 #, c-format
 msgid "%s commit %s - %s"
@@ -18435,7 +18421,7 @@ msgstr "%s Commit %s - %s"
 #. TRANSLATORS: This is a line of ambiguous
 #. tag object output. E.g.:
 #. *
-#.    "deadbeef tag 2022-01-01 - Some Tag Message"
+#. "deadbeef tag 2022-01-01 - Some Tag Message"
 #. *
 #. The second argument is the YYYY-MM-DD found
 #. in the tag.
@@ -18451,7 +18437,7 @@ msgstr "%s Tag %s - %s"
 #. tag object output where we couldn't parse
 #. the tag itself. E.g.:
 #. *
-#.    "deadbeef [bad tag, could not parse it]"
+#. "deadbeef [bad tag, could not parse it]"
 #.
 #, c-format
 msgid "%s [bad tag, could not parse it]"
@@ -18647,9 +18633,8 @@ msgstr "Multi-Pack-Bitmap fehlt erforderlicher Reverse-Index"
 msgid "could not open pack %s"
 msgstr "konnte Paket '%s' nicht öffnen"
 
-#, fuzzy
 msgid "could not determine MIDX preferred pack"
-msgstr "Konnte HEAD-Commit nicht bestimmen."
+msgstr "konnte das von MIDX bevorzugte Paket nicht ermitteln"
 
 #, c-format
 msgid "preferred pack (%s) is invalid"
@@ -18676,6 +18661,8 @@ msgstr ""
 #, c-format
 msgid "unable to load pack: '%s', disabling pack-reuse"
 msgstr ""
+"Paket kann nicht geladen werden: '%s', Deaktivierung der Paket-"
+"Wiederverwendung"
 
 #, c-format
 msgid "object '%s' not found in type bitmaps"
@@ -18768,9 +18755,8 @@ msgstr "ungültige rev-index Position bei %<PRIu64>: %<PRIu32> != %<PRIu32>"
 msgid "multi-pack-index reverse-index chunk is the wrong size"
 msgstr "multi-pack-index Reverse-Index Chunk hat die falsche Größe"
 
-#, fuzzy
 msgid "could not determine preferred pack"
-msgstr "konnte Referenzen nicht entfernen: %s"
+msgstr "konnte das bevorzugte Paket nicht bestimmen"
 
 msgid "cannot both write and verify reverse index"
 msgstr ""
@@ -19932,16 +19918,13 @@ msgid ""
 "\n"
 "Neither worked, so we gave up. You must fully qualify the ref."
 msgstr ""
-"Das angegebene Ziel ist kein vollständiger Referenzname (startet mit \"refs/"
-"\").\n"
-"Wir versuchten zu erraten, was Sie meinten, mit:\n"
+"Das angegebene Ziel ist kein vollständiger Referenzname (startet mit\n"
+"\"refs/\"). Wir versuchten zu erraten, was Sie meinten, mit:\n"
 "\n"
 "- Suche einer Referenz, die mit '%s' übereinstimmt, auf der Remote-Seite\n"
-"- Prüfung, ob die versendete <Quelle> ('%s') eine Referenz in \"refs/{heads,"
-"tags}\"\n"
-"  ist, in dessen Falle wir einen entsprechenden refs/{heads,tags} Präfix "
-"auf\n"
-"  der Remote-Seite hinzufügen würden.\n"
+"- Prüfung, ob die versendete <Quelle> ('%s') eine Referenz in\n"
+"  \"refs/{heads,tags}/\" ist, in dessen Falle wir einen entsprechenden\n"
+"  refs/{heads,tags}/ Präfix auf der Remote-Seite hinzufügen würden.\n"
 "\n"
 "Keines hat funktioniert, sodass wir aufgegeben haben. Sie müssen die\n"
 "Referenz mit vollqualifizierten Namen angeben."
@@ -21127,7 +21110,7 @@ msgid "Autostash exists; creating a new stash entry."
 msgstr "Automatischer Stash existiert; ein neuer Stash-Eintrag wird erstellt."
 
 msgid "autostash reference is a symref"
-msgstr ""
+msgstr "Referenz für autostash ist eine symbolische Referenz"
 
 msgid "could not detach HEAD"
 msgstr "konnte HEAD nicht loslösen"
@@ -21463,10 +21446,11 @@ msgstr "konnte %s nicht nach %s verschieben"
 msgid "attempt to reinitialize repository with different hash"
 msgstr "Versuch, das Repository mit einem anderen Hash zu reinitialisieren"
 
-#, fuzzy
 msgid ""
 "attempt to reinitialize repository with different reference storage format"
-msgstr "Versuch, das Repository mit einem anderen Hash zu reinitialisieren"
+msgstr ""
+"Versuch, das Repository mit einem anderen Referenzspeicherformat neu zu "
+"initialisieren"
 
 #, c-format
 msgid "%s already exists"
@@ -22969,9 +22953,9 @@ msgid "cannot %s: Your index contains uncommitted changes."
 msgstr ""
 "%s nicht möglich: Die Staging-Area enthält nicht committete Änderungen."
 
-#, fuzzy, c-format
+#, c-format
 msgid "unknown style '%s' given for '%s'"
-msgstr "unbekannter Wert '%s' für Schlüssel %s"
+msgstr "unbekannter Stil '%s' für '%s' angegeben"
 
 msgid ""
 "Error: Your local changes to the following files would be overwritten by "
