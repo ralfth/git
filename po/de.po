@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2024-07-19 19:21+0200\n"
-"PO-Revision-Date: 2024-04-26 16:22+0200\n"
+"PO-Revision-Date: 2024-07-19 19:25+0200\n"
 "Last-Translator: Ralf Thielow <ralf.thielow@gmail.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #, c-format
 msgid "Huh (%s)?"
@@ -582,9 +582,9 @@ msgstr ""
 "p - aktuellen Patch-Block anzeigen\n"
 "? - Hilfe anzeigen\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Only one letter is expected, got '%s'"
-msgstr "Ein Branch wird erwartet, '%s' bekommen"
+msgstr "Es wird nur ein Buchstabe erwartet, '%s' erhalten"
 
 msgid "No previous hunk"
 msgstr "Kein vorheriger Patch-Block"
@@ -634,20 +634,18 @@ msgstr "In %d Patch-Block aufgeteilt."
 msgid "Sorry, cannot edit this hunk"
 msgstr "Entschuldigung, kann diesen Patch-Block nicht bearbeiten"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown command '%s' (use '?' for help)"
-msgstr "unbekannter Befehl: '%s'"
+msgstr "Unbekannter Befehl '%s' (für Hilfe '?' verwenden)"
 
 msgid "'git apply' failed"
 msgstr "'git apply' schlug fehl"
 
-#, fuzzy
 msgid "No changes."
-msgstr "Keine Änderungen.\n"
+msgstr "Keine Änderungen."
 
-#, fuzzy
 msgid "Only binary files changed."
-msgstr "Nur Binärdateien geändert.\n"
+msgstr "Nur Binärdateien geändert."
 
 #, c-format
 msgid ""
@@ -1533,9 +1531,8 @@ msgstr "ignoriere übermäßig große gitattributes-Datei '%s'"
 msgid "ignoring overly large gitattributes blob '%s'"
 msgstr "ignoriere übermäßig großen gitattribute-Blob '%s'"
 
-#, fuzzy
 msgid "cannot use --attr-source or GIT_ATTR_SOURCE without repo"
-msgstr "ungültiges --attr-source oder GIT_ATTR_SOURCE"
+msgstr "kann nicht --attr-source oder GIT_ATTR_SOURCE ohne Repository verwenden"
 
 msgid "bad --attr-source or GIT_ATTR_SOURCE"
 msgstr "ungültiges --attr-source oder GIT_ATTR_SOURCE"
@@ -1732,12 +1729,10 @@ msgstr ""
 msgid "not tracking: ambiguous information for ref '%s'"
 msgstr "kein Tracking: mehrdeutige Informationen für Referenz '%s'"
 
-#. #-#-#-#-#  branch.c.po  #-#-#-#-#
 #. TRANSLATORS: This is a line listing a remote with duplicate
 #. refspecs in the advice message below. For RTL languages you'll
 #. probably want to swap the "%s" and leading "  " space around.
 #.
-#. #-#-#-#-#  object-name.c.po  #-#-#-#-#
 #. TRANSLATORS: This is line item of ambiguous object output
 #. from describe_ambiguous_object() above. For RTL languages
 #. you'll probably want to swap the "%s" and leading " " space
@@ -2317,9 +2312,8 @@ msgstr "Patch-Operation abbrechen, aber HEAD an aktueller Stelle belassen"
 msgid "show the patch being applied"
 msgstr "den Patch, der gerade angewendet wird, anzeigen"
 
-#, fuzzy
 msgid "try to apply current patch again"
-msgstr "den aktuellen Patch auslassen und fortfahren"
+msgstr "den aktuellen Patch erneut versuchen anzuwenden"
 
 msgid "record the empty patch as an empty commit"
 msgstr "leerer Patch als leeren Commit gespeichert"
@@ -4342,13 +4336,13 @@ msgstr ""
 msgid "failed to unlink '%s'"
 msgstr "Konnte '%s' nicht entfernen."
 
-#, fuzzy, c-format
+#, c-format
 msgid "hardlink cannot be checked at '%s'"
-msgstr "'%s' kann nicht mit '%s' verwendet werden"
+msgstr "Hardlink bei '%s' kann nicht geprüft werden"
 
 #, c-format
 msgid "hardlink different from source at '%s'"
-msgstr ""
+msgstr "Hardlink unterscheidet sich von der Quelle bei '%s'"
 
 #, c-format
 msgid "failed to create link '%s'"
@@ -5208,43 +5202,51 @@ msgstr ""
 "anschließend \"git restore --staged :/\" zur Wiederherstellung aus."
 
 msgid "git config list [<file-option>] [<display-option>] [--includes]"
-msgstr ""
+msgstr "git config list [<Datei-Option>] [<Anzeige-Option>] [--includes]"
 
 msgid ""
 "git config get [<file-option>] [<display-option>] [--includes] [--all] [--"
 "regexp=<regexp>] [--value=<value>] [--fixed-value] [--default=<default>] "
 "<name>"
 msgstr ""
+"git config get [<Datei-Option>] [<Anzeige-Option>] [--includes] [--all] [--"
+"regexp=<Regex>] [--value=<Wert>] [--fixed-value] [--default=<Standardwert>] "
+"<Name>"
 
 msgid ""
 "git config set [<file-option>] [--type=<type>] [--all] [--value=<value>] [--"
 "fixed-value] <name> <value>"
 msgstr ""
+"git config set [<Datei-Option>] [--type=<Typ>] [--all] [--value=<Wert>] [--"
+"fixed-value] <Name> <Wert>"
 
 msgid ""
 "git config unset [<file-option>] [--all] [--value=<value>] [--fixed-value] "
 "<name> <value>"
 msgstr ""
+"git config unset [<Datei-Option>] [--all] [--value=<Wert>] [--fixed-value] "
+"<Name> <Wert>"
 
-#, fuzzy
 msgid "git config rename-section [<file-option>] <old-name> <new-name>"
-msgstr "eine Sektion umbenennen: alter-Name neuer-Name"
+msgstr "git config rename-section [<Datei-Option>] <alter-Name> <neuer-Name>"
 
-#, fuzzy
 msgid "git config remove-section [<file-option>] <name>"
-msgstr "git remote show [<Optionen>] <Name>"
+msgstr "git config remove-section [<Datei-Option>] <Name>"
 
-#, fuzzy
 msgid "git config edit [<file-option>]"
-msgstr "git config [<Optionen>]"
+msgstr "git config edit [<Datei-Option>]"
 
 msgid "git config [<file-option>] --get-colorbool <name> [<stdout-is-tty>]"
 msgstr ""
+"git config [<Datei-Option>] --get-colorbool <Name> [<Standard-Ausgabe-ist-"
+"Terminal>]"
 
 msgid ""
 "git config set [<file-option>] [--type=<type>] [--comment=<message>] [--all] "
 "[--value=<value>] [--fixed-value] <name> <value>"
 msgstr ""
+"git config set [<Datei-Option>] [--type=<Typ>] [--comment=<Nachricht>] [--"
+"all] [--value=<Wert>] [--fixed-value] <Name> <Wert>"
 
 msgid "Config file location"
 msgstr "Ort der Konfigurationsdatei"
@@ -5297,9 +5299,8 @@ msgstr "Wert ist ein Pfad (Datei oder Verzeichnisname)"
 msgid "value is an expiry date"
 msgstr "Wert ist ein Verfallsdatum"
 
-#, fuzzy
 msgid "Display options"
-msgstr "Daten in Spalten anzeigen"
+msgstr "Anzeigeoptionen"
 
 msgid "terminate values with NUL byte"
 msgstr "schließt Werte mit NUL-Byte ab"
@@ -5317,9 +5318,8 @@ msgstr ""
 "Zeige Geltungsbereich der Konfiguration (Arbeitsverzeichnis, lokal, global, "
 "systemweit, Befehl)"
 
-#, fuzzy
 msgid "show config keys in addition to their values"
-msgstr "zusätzlich zum Objekt die darauf verweisenden Referenzen anzeigen"
+msgstr "Konfigurationsschlüssel zusätzlich zu dessen Werten anzeigen"
 
 #, c-format
 msgid "unrecognized --type argument, %s"
@@ -5417,72 +5417,60 @@ msgstr "Konnte Konfigurationsdatei '%s' nicht lesen."
 msgid "error processing config file(s)"
 msgstr "Fehler beim Verarbeiten der Konfigurationsdatei(en)."
 
-#, fuzzy
 msgid "Filter options"
-msgstr "Merge-Optionen"
+msgstr "Filter-Optionen"
 
 msgid "return all values for multi-valued config options"
-msgstr ""
+msgstr "alle Werte für mehrwertige Konfigurationsoptionen zurückgeben"
 
-#, fuzzy
 msgid "interpret the name as a regular expression"
-msgstr "Unerwartetes Ende des regulären Ausdrucks"
+msgstr "den Namen als regulären Ausdruck interpretieren"
 
-#, fuzzy
 msgid "show config with values matching the pattern"
-msgstr "Dateien auslassen, die einem Muster entsprechen"
+msgstr "Anzeige von Konfiguration mit Werten, die dem Muster entsprechen"
 
-#, fuzzy
 msgid "use string equality when comparing values to value pattern"
-msgstr ""
-"nutze String-Gleichheit beim Vergleich von Werten mit dem 'Wert-Muster'"
+msgstr "String-Gleichheit beim Vergleich von Werten mit Wertmustern verwenden"
 
-#, fuzzy
 msgid "URL"
-msgstr "URL: %s"
+msgstr "URL"
 
-#, fuzzy
 msgid "show config matching the given URL"
-msgstr "Änderungen nur im angegebenen Pfad anwenden"
+msgstr "Konfiguration für die angegebene URL anzeigen"
 
 msgid "value"
 msgstr "Wert"
 
-#, fuzzy
 msgid "use default value when missing entry"
-msgstr "mit --get, benutze den Standardwert, wenn der Eintrag fehlt"
+msgstr "Standardwert verwenden, wenn Eintrag fehlt"
 
 msgid "--fixed-value only applies with 'value-pattern'"
 msgstr "--fixed-value wird nur zusammen mit 'Wert-Muster' angewendet"
 
-#, fuzzy
 msgid "--default= cannot be used with --all or --url="
-msgstr "--format=%.*s kann nicht mit --python, --shell, --tcl verwendet werden"
+msgstr "--default= kann nicht mit --all oder --url= verwendet werden"
 
-#, fuzzy
 msgid "--url= cannot be used with --all, --regexp or --value"
-msgstr "--format=%.*s kann nicht mit --python, --shell, --tcl verwendet werden"
+msgstr "--url= kann nicht mit --all, --regexp oder --value verwendet werden"
 
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
 msgid "replace multi-valued config option with new value"
-msgstr ""
+msgstr "mehrwertige Konfigurationsoption durch einen neuen Wert ersetzen"
 
 msgid "human-readable comment string (# will be prepended as needed)"
 msgstr ""
 "menschenlesbare Kommentarzeichenfolge (# wird bei Bedarf vorangestellt)"
 
 msgid "add a new line without altering any existing values"
-msgstr ""
+msgstr "eine neue Zeile hinzufügen, ohne bestehende Werte zu ändern"
 
-#, fuzzy
 msgid "--fixed-value only applies with --value=<pattern>"
-msgstr "--fixed-value wird nur zusammen mit 'Wert-Muster' angewendet"
+msgstr "--fixed-value gilt nur mit --value=<pattern>"
 
-#, fuzzy
 msgid "--append cannot be used with --value=<pattern>"
-msgstr "-L<Bereich>:<Datei> kann nicht mit Pfadspezifikation verwendet werden"
+msgstr "--append kann nicht mit --value=<pattern> verwendet werden"
 
 #, c-format
 msgid ""
@@ -5510,35 +5498,29 @@ msgstr "Konnte Konfigurationsdatei '%s' nicht erstellen."
 msgid "Action"
 msgstr "Aktion"
 
-#, fuzzy
 msgid "get value: name [<value-pattern>]"
-msgstr "Wert zurückgeben: Name [Wert-Muster]"
+msgstr "Wert zurückgeben: Name [<Wert-Muster>]"
 
-#, fuzzy
 msgid "get all values: key [<value-pattern>]"
-msgstr "alle Werte zurückgeben: Schlüssel [Wert-Muster]"
+msgstr "alle Werte zurückgeben: Schlüssel [<Wert-Muster>]"
 
-#, fuzzy
 msgid "get values for regexp: name-regex [<value-pattern>]"
-msgstr "Werte für den regulären Ausdruck zurückgeben: Name-Regex [Wert-Muster]"
+msgstr "Werte für den regulären Ausdruck zurückgeben: Name-Regex <Wert-Muster>"
 
 msgid "get value specific for the URL: section[.var] URL"
 msgstr "Wert spezifisch für eine URL zurückgeben: section[.var] URL"
 
-#, fuzzy
 msgid "replace all matching variables: name value [<value-pattern>]"
-msgstr "alle passenden Variablen ersetzen: Name Wert [Wert-Muster] "
+msgstr "alle passenden Variablen ersetzen: Name Wert [<Wert-Muster>]"
 
 msgid "add a new variable: name value"
 msgstr "neue Variable hinzufügen: Name Wert"
 
-#, fuzzy
 msgid "remove a variable: name [<value-pattern>]"
-msgstr "eine Variable entfernen: Name [Wert-Muster]"
+msgstr "eine Variable entfernen: Name [<Wert-Muster>]"
 
-#, fuzzy
 msgid "remove all matches: name [<value-pattern>]"
-msgstr "alle Übereinstimmungen entfernen: Name [Wert-Muster]"
+msgstr "alle Treffer entfernen: Name [<Wert-Muster>]"
 
 msgid "rename section: old-name new-name"
 msgstr "eine Sektion umbenennen: alter-Name neuer-Name"
@@ -5552,11 +5534,9 @@ msgstr "alles auflisten"
 msgid "open an editor"
 msgstr "einen Editor öffnen"
 
-#, fuzzy
 msgid "find the color configured: slot [<default>]"
-msgstr "die konfigurierte Farbe finden: Slot [Standard]"
+msgstr "die konfigurierte Farbe finden: Slot [<Standard>]"
 
-#, fuzzy
 msgid "find the color setting: slot [<stdout-is-tty>]"
 msgstr "die Farbeinstellung finden: Slot [Standard-Ausgabe-ist-Terminal]"
 
@@ -5566,9 +5546,8 @@ msgstr "mit --get, benutze den Standardwert, wenn der Eintrag fehlt"
 msgid "--get-color and variable type are incoherent"
 msgstr "Angabe von --get-color und Variablentyp sind ungültig."
 
-#, fuzzy
 msgid "no action specified"
-msgstr "kein Pfad angegeben"
+msgstr "keine Aktion angegeben"
 
 msgid "--name-only is only applicable to --list or --get-regexp"
 msgstr "--name-only ist nur anwendbar auf --list oder --get-regexp"
@@ -6440,7 +6419,7 @@ msgid "config key storing a list of repository paths"
 msgstr "Konfigurationsschlüssel für eine Liste von Repository-Pfaden"
 
 msgid "keep going even if command fails in a repository"
-msgstr ""
+msgstr "weiterarbeiten, auch wenn der Befehl in einem Repository fehlschlägt"
 
 msgid "missing --config=<config>"
 msgstr "Option --config=<Konfiguration> fehlt"
@@ -7046,7 +7025,6 @@ msgstr "grep: Fehler beim Erzeugen eines Thread: %s"
 msgid "invalid number of threads specified (%d) for %s"
 msgstr "ungültige Anzahl von Threads (%d) für %s angegeben"
 
-#. #-#-#-#-#  grep.c.po  #-#-#-#-#
 #. TRANSLATORS: %s is the configuration
 #. variable for tweaking threads, currently
 #. grep.threads
@@ -7918,12 +7896,11 @@ msgstr "die Serie als n-te Fassung kennzeichnen"
 msgid "max length of output filename"
 msgstr "maximale Länge des Dateinamens für die Ausgabe"
 
-#, fuzzy
 msgid "rfc"
-msgstr "Refspec"
+msgstr "rfc"
 
 msgid "add <rfc> (default 'RFC') before 'PATCH'"
-msgstr ""
+msgstr "<rfc> (standardmäßig 'RFC') vor 'PATCH' hinzufügen"
 
 msgid "cover-from-description-mode"
 msgstr "Modus für Erstellung des Deckblattes aus der Beschreibung"
@@ -8198,13 +8175,12 @@ msgstr ""
 "--format kann nicht mit -s, -o, -k, -t, --resolve-undo, --deduplicate, --eol "
 "verwendet werden"
 
-#, fuzzy
 msgid ""
 "git ls-remote [--branches] [--tags] [--refs] [--upload-pack=<exec>]\n"
 "              [-q | --quiet] [--exit-code] [--get-url] [--sort=<key>]\n"
 "              [--symref] [<repository> [<patterns>...]]"
 msgstr ""
-"git ls-remote [--heads] [--tags] [--refs] [--upload-pack=<Programm>]\n"
+"git ls-remote [--branches] [--tags] [--refs] [--upload-pack=<Programm>]\n"
 "              [-q | --quiet] [--exit-code] [--get-url] [--sort=<Schlüssel>]\n"
 "              [--symref] [<Repository> [<Muster>...]]"
 
@@ -8220,13 +8196,11 @@ msgstr "Pfad zu \"git-upload-pack\" auf der Gegenseite"
 msgid "limit to tags"
 msgstr "auf Tags einschränken"
 
-#, fuzzy
 msgid "limit to branches"
-msgstr "auf Branches einschränken"
+msgstr "Beschränkung auf Branches"
 
-#, fuzzy
 msgid "deprecated synonym for --branches"
-msgstr "ungeborenen Branch erzeugen"
+msgstr "veraltetes Synonym für --branches"
 
 msgid "do not show peeled tags"
 msgstr "keine Tags anzeigen, die andere Tags enthalten"
@@ -10952,23 +10926,21 @@ msgstr "Kein Reflog zum Löschen angegeben."
 msgid "invalid ref format: %s"
 msgstr "Ungültiges Format für Referenzen: %s"
 
-#, fuzzy
 msgid "git refs migrate --ref-format=<format> [--dry-run]"
-msgstr "git replace [--format=<Format>] [-l [<Muster>]]"
+msgstr "git refs migrate --ref-format=<Format> [--dry-run]"
 
-#, fuzzy
 msgid "specify the reference format to convert to"
-msgstr "das zu verwendende Referenzformat angeben"
+msgstr "das Referenzformat angeben, in das konvertiert werden soll"
 
 msgid "perform a non-destructive dry-run"
-msgstr ""
+msgstr "einen zerstörungsfreien Trockenlauf durchführen"
 
 msgid "missing --ref-format=<format>"
-msgstr ""
+msgstr "fehlendes --ref-format=<Format>"
 
-#, fuzzy, c-format
+#, c-format
 msgid "repository already uses '%s' format"
-msgstr "Repository bei '%s' hat ein Formatproblem"
+msgstr "das Repository verwendet bereits das Format '%s'"
 
 msgid ""
 "git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--"
@@ -12394,15 +12366,14 @@ msgstr "Hash-Algorithmus"
 msgid "Unknown hash algorithm"
 msgstr "Unbekannter Hash-Algorithmus"
 
-#, fuzzy
 msgid ""
 "git show-ref [--head] [-d | --dereference]\n"
 "             [-s | --hash[=<n>]] [--abbrev[=<n>]] [--branches] [--tags]\n"
 "             [--] [<pattern>...]"
 msgstr ""
 "git show-ref [--head] [-d | --dereference]\n"
-"             [-s | --hash[=<n>]] [--abbrev[=<n>]] [--tags]\n"
-"             [--heads] [--] [<Muster>...]"
+"             [-s | --hash[=<n>]] [--abbrev[=<n>]] [--branches] [--tags]\n"
+"             [--] [<Muster>...]"
 
 msgid ""
 "git show-ref --verify [-q | --quiet] [-d | --dereference]\n"
@@ -12425,13 +12396,11 @@ msgstr "Referenz nicht vorhanden"
 msgid "failed to look up reference"
 msgstr "Fehler beim Nachschlagen der Referenz"
 
-#, fuzzy
 msgid "only show tags (can be combined with branches)"
-msgstr "nur Tags anzeigen (kann mit \"heads\" kombiniert werden)"
+msgstr "nur Tags anzeigen (kann mit Branches kombiniert werden)"
 
-#, fuzzy
 msgid "only show branches (can be combined with tags)"
-msgstr "nur Branches anzeigen (kann mit \"tags\" kombiniert werden)"
+msgstr "nur Branches anzeigen (kann mit Tags kombiniert werden)"
 
 msgid "check for reference existence without resolving"
 msgstr "Prüfung auf Vorhandensein einer Referenz, ohne diese aufzulösen"
@@ -13459,13 +13428,13 @@ msgstr "Grund"
 msgid "reason of the update"
 msgstr "Grund für die Aktualisierung"
 
-#, fuzzy
 msgid ""
 "git tag [-a | -s | -u <key-id>] [-f] [-m <msg> | -F <file>] [-e]\n"
 "        [(--trailer <token>[(=|:)<value>])...]\n"
 "        <tagname> [<commit> | <object>]"
 msgstr ""
 "git tag [-a | -s | -u <Key-ID>] [-f] [-m <Beschreibung> | -F <Datei>] [-e]\n"
+"        [(--trailer <Token>[(=|:)<Wert>])...]\n"
 "        <Tagname> [<Commit> | <Objekt>]"
 
 msgid "git tag -d <tagname>..."
@@ -14779,7 +14748,7 @@ msgid "Manage reflog information"
 msgstr "Reflog Informationen verwalten"
 
 msgid "Low-level access to refs"
-msgstr ""
+msgstr "Low-Level Zugang zu Referenzen"
 
 msgid "Manage set of tracked repositories"
 msgstr "Menge von hinterlegten Repositories verwalten"
@@ -15096,6 +15065,8 @@ msgid ""
 "disabling Bloom filters for commit-graph layer '%s' due to incompatible "
 "settings"
 msgstr ""
+"deaktiviere Bloom-Filter für die Commit-Graph-Ebene '%s' aufgrund "
+"inkompatibler Einstellungen"
 
 msgid "commit-graph has no base graphs chunk"
 msgstr "Commit-Graph hat keinen Basis-Graph-Chunk"
@@ -15224,13 +15195,13 @@ msgstr ""
 "versuche einen Commit-Graph zu schreiben, aber 'core.commitGraph' ist "
 "deaktiviert"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "attempting to write a commit-graph, but 'commitGraph.changedPathsVersion' "
 "(%d) is not supported"
 msgstr ""
-"versuche einen Commit-Graph zu schreiben, aber 'core.commitGraph' ist "
-"deaktiviert"
+"versuche, einen Commit-Graphen zu schreiben, aber 'commitGraph."
+"changedPathsVersion' (%d) wird nicht unterstützt"
 
 msgid "too many commits to write graph"
 msgstr "zu viele Commits zum Schreiben des Graphen"
@@ -17118,7 +17089,6 @@ msgstr ""
 "Socket-Verzeichnis '%s' ist mit fsmonitor inkompatibel, da es keine Unix-"
 "Sockets unterstützt"
 
-#, fuzzy
 msgid ""
 "git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n"
 "           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n"
@@ -17131,10 +17101,12 @@ msgid ""
 msgstr ""
 "git [-v | --version] [-h | --help] [-C <Pfad>] [-c <Name>=<Wert>]\n"
 "           [--exec-path[=<Pfad>]] [--html-path] [--man-path] [--info-path]\n"
-"           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--"
-"bare]\n"
-"           [--git-dir=<Pfad>] [--work-tree=<Pfad>] [--namespace=<Name>]\n"
-"           [--config-env=<Name>=<Umgebungsvariable>] <Befehl> [<Argumente>]"
+"           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-"
+"lazy-fetch]\n"
+"           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<Pfad>]\n"
+"           [--work-tree=<Pfad>] [--namespace=<Name>] [--config-"
+"env=<Name>=<Umgebungsvariable>]\n"
+"           <Befehl> [<Argumente>]"
 
 msgid ""
 "'git help -a' and 'git help -g' list available subcommands and some\n"
@@ -17495,9 +17467,8 @@ msgstr ""
 "Das Anheften des öffentlichen Schlüssels wird mit cURL < 7.39.0 nicht "
 "unterstützt"
 
-#, fuzzy
 msgid "Unknown value for http.proactiveauth"
-msgstr "unbekannter Wert für Objektformat: %s"
+msgstr "Unbekannter Wert für http.proactiveauth"
 
 msgid "CURLSSLOPT_NO_REVOKE not supported with cURL < 7.44.0"
 msgstr "CURLSSLOPT_NO_REVOKE wird mit cURL < 7.44.0 nicht unterstützt."
@@ -17516,10 +17487,10 @@ msgid "Could not set SSL backend to '%s': already set"
 msgstr "Konnte SSL-Backend nicht zu '%s' setzen: bereits gesetzt"
 
 msgid "refusing to read cookies from http.cookiefile '-'"
-msgstr ""
+msgstr "Lesen von Cookies von http.cookiefile '-' verweigert"
 
 msgid "ignoring http.savecookies for empty http.cookiefile"
-msgstr ""
+msgstr "http.savecookies wird bei leerem http.cookiefile ignoriert"
 
 #, c-format
 msgid ""
@@ -17697,10 +17668,11 @@ msgstr "Merge von Submodul %s fehlgeschlagen (keine Merge-Basis)"
 msgid "Failed to merge submodule %s (commits not present)"
 msgstr "Fehler beim Merge von Submodul %s (Commits nicht vorhanden)."
 
-#, fuzzy, c-format
+#, c-format
 msgid "error: failed to merge submodule %s (repository corrupt)"
 msgstr ""
-"Submodul %s konnte nicht zusammengeführt werden (Repository beschädigt)"
+"Fehler: Submodul %s konnte nicht zusammengeführt werden (Repository "
+"beschädigt)"
 
 #, c-format
 msgid "Failed to merge submodule %s (commits don't follow merge-base)"
@@ -17730,13 +17702,13 @@ msgstr ""
 "sind vorhanden:\n"
 "%s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "error: failed to execute internal merge for %s"
-msgstr "Fehler bei Ausführung des internen Merges"
+msgstr "Fehler: Der interne Merge für %s konnte nicht ausgeführt werden"
 
-#, fuzzy, c-format
+#, c-format
 msgid "error: unable to add %s to database"
-msgstr "konnte %s nicht zur Datenbank hinzufügen"
+msgstr "Fehler: kann %s nicht zur Datenbank hinzufügen"
 
 #, c-format
 msgid "Auto-merging %s"
@@ -17833,13 +17805,13 @@ msgid "CONFLICT (rename/delete): %s renamed to %s in %s, but deleted in %s."
 msgstr ""
 "KONFLIKT (umbenennen/löschen): %s zu %s in %s umbenannt, aber in %s gelöscht."
 
-#, fuzzy, c-format
+#, c-format
 msgid "error: cannot read object %s"
-msgstr "kann Objekt %s nicht lesen"
+msgstr "Fehler: kann Objekt %s nicht lesen"
 
-#, fuzzy, c-format
+#, c-format
 msgid "error: object %s is not a blob"
-msgstr "Objekt %s ist kein Blob"
+msgstr "Fehler: Objekt %s ist kein Blob"
 
 #, c-format
 msgid ""
@@ -18869,17 +18841,16 @@ msgstr "Konnte Objekt '%s' nicht parsen."
 msgid "hash mismatch %s"
 msgstr "Hash stimmt nicht mit %s überein."
 
-#, fuzzy, c-format
+#, c-format
 msgid "duplicate entry when writing bitmap index: %s"
-msgstr "duplizierter Eintrag im Bitmap-Index: '%s'"
+msgstr "doppelter Eintrag beim Schreiben des Bitmap-Index: %s"
 
 #, c-format
 msgid "attempted to store non-selected commit: '%s'"
-msgstr ""
+msgstr "versuchte, nicht gewählten Commit '%s' zu speichern"
 
-#, fuzzy
 msgid "too many pseudo-merges"
-msgstr "zu viele Argumente"
+msgstr "zu viele Pseudo-Merges"
 
 msgid "trying to write commit not in index"
 msgstr "Versuch, einen Commit zu schreiben, der nicht im Index steht"
@@ -18905,20 +18876,16 @@ msgid "corrupted bitmap index file (too short to fit lookup table)"
 msgstr ""
 "beschädigte Bitmap-Indexdatei (zu kurz, um in die Lookup-Tabelle zu passen)"
 
-#, fuzzy
 msgid ""
 "corrupted bitmap index file (too short to fit pseudo-merge table header)"
 msgstr ""
-"beschädigte Bitmap-Indexdatei (zu kurz, um in die Lookup-Tabelle zu passen)"
+"beschädigte Bitmap-Indexdatei (zu kurz für den Pseudo-Merge-Tabellenkopf)"
 
-#, fuzzy
 msgid "corrupted bitmap index file (too short to fit pseudo-merge table)"
-msgstr ""
-"beschädigte Bitmap-Indexdatei (zu kurz, um in die Lookup-Tabelle zu passen)"
+msgstr "beschädigte Bitmap-Indexdatei (zu kurz für die Pseudo-Merge-Tabelle)"
 
-#, fuzzy
 msgid "corrupted bitmap index file, pseudo-merge table too short"
-msgstr "beschädigte Bitmap-Indexdatei (falscher Header)"
+msgstr "beschädigte Bitmap-Indexdatei, Pseudo-Merge-Tabelle zu kurz"
 
 #, c-format
 msgid "duplicate entry in bitmap index: '%s'"
@@ -19018,7 +18985,7 @@ msgstr "Unstimmigkeiten bei Bitmap-Ergebnissen"
 
 #, c-format
 msgid "pseudo-merge index out of range (%<PRIu32> >= %<PRIuMAX>)"
-msgstr ""
+msgstr "Pseudo-Merge-Index außerhalb des Bereichs (%<PRIu32> >= %<PRIuMAX>)"
 
 #, c-format
 msgid "could not find '%s' in pack '%s' at offset %<PRIuMAX>"
@@ -19392,6 +19359,7 @@ msgstr "Konnte --pretty Format nicht parsen."
 
 msgid "lazy fetching disabled; some objects may not be available"
 msgstr ""
+"lazy fetching deaktiviert; einige Objekte sind möglicherweise nicht verfügbar"
 
 msgid "promisor-remote: unable to fork off fetch subprocess"
 msgstr "Promisor-Remote: konnte Fetch-Subprozess nicht abspalten"
@@ -19418,61 +19386,67 @@ msgstr "object-info: erwartete Flush nach Argumenten"
 msgid "Removing duplicate objects"
 msgstr "Lösche doppelte Objekte"
 
-#, fuzzy, c-format
+#, c-format
 msgid "failed to load pseudo-merge regex for %s: '%s'"
-msgstr ""
-"Fehler beim Laden des regulären Ausdrucks des Delta-Island für '%s': %s"
+msgstr "Pseudo-Merge-Regex konnte nicht geladen werden für %s: '%s'"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s must be non-negative, using default"
-msgstr "%s muss nicht-negativ sein"
+msgstr "%s muss nicht-negativ sein, Standardwert wird verwendet"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s must be between 0 and 1, using default"
-msgstr "stage sollte zwischen 1 und 3 oder 'all' sein"
+msgstr "%s muss zwischen 0 und 1 liegen, Standardwert wird verwendet"
 
 #, c-format
 msgid "%s must be positive, using default"
-msgstr ""
+msgstr "%s muss positiv sein, verwende Standardwert"
 
 #, c-format
 msgid "pseudo-merge group '%s' missing required pattern"
-msgstr ""
+msgstr "Pseudo-Merge-Gruppe '%s' fehlt erforderliches Muster"
 
 #, c-format
 msgid "pseudo-merge group '%s' has unstable threshold before stable one"
 msgstr ""
+"Pseudo-Merge-Gruppe '%s' hat einen instabilen vor einem stabilen "
+"Schwellenwert"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "pseudo-merge regex from config has too many capture groups (max=%<PRIuMAX>)"
 msgstr ""
-"regulärer Ausdruck des Delta-Island aus Konfiguration hat zu\n"
-"viele Capture-Gruppen (maximal %d)"
+"Pseudo-Merge-Regex aus der Konfiguration hat zu viele Capture-Gruppen "
+"(maximum=%<PRIuMAX>)"
 
 #, c-format
 msgid "extended pseudo-merge read out-of-bounds (%<PRIuMAX> >= %<PRIuMAX>)"
 msgstr ""
+"erweiterter Pseudo-Merge liest außerhalb des Bereichs (%<PRIuMAX> >= "
+"%<PRIuMAX>)"
 
 #, c-format
 msgid "extended pseudo-merge entry is too short (%<PRIuMAX> >= %<PRIuMAX>)"
 msgstr ""
+"erweiterter Pseudo-Merge-Eintrag ist zu kurz (%<PRIuMAX> >= %<PRIuMAX>)"
 
-#, fuzzy, c-format
+#, c-format
 msgid "could not find pseudo-merge for commit %s at offset %<PRIuMAX>"
-msgstr "konnte '%s' in Paket '%s' bei Offset %<PRIuMAX> nicht finden"
+msgstr "konnte keinen Pseudo-Merge für Commit %s bei Offset %<PRIuMAX> finden"
 
 #, c-format
 msgid "extended pseudo-merge lookup out-of-bounds (%<PRIu32> >= %<PRIu32>)"
 msgstr ""
+"erweiterte Pseudo-Merge-Suche außerhalb des Bereichs (%<PRIu32> >= "
+"%<PRIu32>)"
 
-#, fuzzy, c-format
+#, c-format
 msgid "out-of-bounds read: (%<PRIuMAX> >= %<PRIuMAX>)"
-msgstr "read() zu kurz (%<PRIuMAX> Bytes erwartet, %<PRIuMAX> gelesen)"
+msgstr "Lesen außerhalb des zulässigen Bereichs: (%<PRIuMAX> >= %<PRIuMAX>)"
 
-#, fuzzy, c-format
+#, c-format
 msgid "could not read extended pseudo-merge table for commit %s"
-msgstr "Konnte Verzeichnisse für '%s' nicht erstellen"
+msgstr "konnte erweiterte Pseudo-Merge-Tabelle für Commit %s nicht lesen"
 
 msgid "could not start `log`"
 msgstr "Konnte `log` nicht starten."
@@ -20082,19 +20056,16 @@ msgstr "Log für Referenz %s unerwartet bei %s beendet."
 msgid "log for %s is empty"
 msgstr "Log für %s ist leer."
 
-#, fuzzy
 msgid "refusing to force and skip creation of reflog"
-msgstr ""
-"Ausführung von %s auf Notizen in %s (außerhalb von refs/notes/) "
-"zurückgewiesen"
+msgstr "Erzwingen der Aktion verweigert; überspringe Erstellung des Reflogs"
 
 #, c-format
 msgid "refusing to update ref with bad name '%s'"
 msgstr "verweigere Aktualisierung einer Referenz mit fehlerhaftem Namen '%s'"
 
-#, fuzzy, c-format
+#, c-format
 msgid "refusing to update pseudoref '%s'"
-msgstr "verweigere Aktualisierung einer Referenz mit fehlerhaftem Namen '%s'"
+msgstr "Aktualisierung von Pseudoreferenz '%s' verweigert"
 
 #, c-format
 msgid "update_ref failed for ref '%s': %s"
@@ -20131,19 +20102,23 @@ msgstr "konnte Referenzen nicht entfernen: %s"
 #, c-format
 msgid "Finished dry-run migration of refs, the result can be found at '%s'\n"
 msgstr ""
+"Trockenlauf der Migration von Referenzen abgeschlossen. Das Ergebnis kann "
+"unter '%s' gefunden werden.\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "could not remove temporary migration directory '%s'"
-msgstr "konnte temporäre Datei nicht zu %s umbenennen"
+msgstr "konnte das temporäre Migrationsverzeichnis '%s' nicht entfernen"
 
 #, c-format
 msgid "migrated refs can be found at '%s'"
-msgstr ""
+msgstr "migrierte Referenzen befinden sich unter '%s'"
 
 #, c-format
 msgid ""
 "cannot lock ref '%s': expected symref with target '%s': but is a regular ref"
 msgstr ""
+"kann Referenz '%s' nicht sperren: erwartete symbolische Referenz mit Ziel "
+"'%s': ist aber eine reguläre Referenz"
 
 #, c-format
 msgid "refname is dangerous: %s"
@@ -21323,9 +21298,9 @@ msgstr ""
 "update-ref erfordert einen vollständig qualifizierten Referenznamen, z. B. "
 "refs/heads/%s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' does not accept merge commits"
-msgstr "'%s' zeigt auf keinen Commit"
+msgstr "'%s' akzeptiert keine Merge-Commits"
 
 #. TRANSLATORS: 'pick' and 'merge -C' should not be
 #. translated.
@@ -21334,6 +21309,8 @@ msgid ""
 "'pick' does not take a merge commit. If you wanted to\n"
 "replay the merge, use 'merge -C' on the commit."
 msgstr ""
+"'pick' nimmt keinen Merge-Commit an. Wenn Sie den Merge wiederholen\n"
+"wollen, verwenden Sie 'merge -C' auf den Commit."
 
 #. TRANSLATORS: 'reword' and 'merge -c' should not be
 #. translated.
@@ -21343,6 +21320,10 @@ msgid ""
 "replay the merge and reword the commit message, use\n"
 "'merge -c' on the commit"
 msgstr ""
+"'reword' erfordert keinen Merge-Commit. Wenn Sie\n"
+"den Merge wiederholen und die Commit-Nachricht\n"
+"neu formulieren wollen, verwenden Sie\n"
+"'merge -c' auf den Commit"
 
 #. TRANSLATORS: 'edit', 'merge -C' and 'break' should
 #. not be translated.
@@ -21353,9 +21334,13 @@ msgid ""
 "'break' to give the control back to you so that you can\n"
 "do 'git commit --amend && git rebase --continue'."
 msgstr ""
+"'edit' nimmt keinen Merge-Commit an. Wenn Sie den Merge wiederholen\n"
+"wollen, verwenden Sie 'merge -C' auf den Commit und dann\n"
+"break', um die Kontrolle zurückzugewinnen, sodass Sie\n"
+"'git commit --amend && git rebase --continue' ausführen können."
 
 msgid "cannot squash merge commit into another commit"
-msgstr ""
+msgstr "kann einen Merge-Commit nicht mit einem anderen Commit zusammenfassen"
 
 #, c-format
 msgid "invalid command '%.*s'"
@@ -21475,9 +21460,8 @@ msgstr ""
 msgid "cannot read HEAD"
 msgstr "kann HEAD nicht lesen"
 
-#, fuzzy
 msgid "could not write commit message file"
-msgstr "Konnte Commit-Beschreibung von %s nicht lesen."
+msgstr "konnte keine Commit-Beschreibungsdatei schreiben"
 
 #, c-format
 msgid ""
@@ -22226,13 +22210,13 @@ msgid "submodule git dir '%s' is inside git dir '%.*s'"
 msgstr ""
 "Git-Verzeichnis des Submoduls '%s' ist im Git-Verzeichnis '%.*s' enthalten."
 
-#, fuzzy, c-format
+#, c-format
 msgid "expected '%.*s' in submodule path '%s' not to be a symbolic link"
-msgstr "betroffene Datei '%s' ist hinter einer symbolischen Verknüpfung"
+msgstr "erwartete, dass '%.*s' im Submodulpfad '%s' kein symbolischer Link ist"
 
-#, fuzzy, c-format
+#, c-format
 msgid "expected submodule path '%s' not to be a symbolic link"
-msgstr "betroffene Datei '%s' ist hinter einer symbolischen Verknüpfung"
+msgstr "erwartete, dass der Submodulpfad '%s' kein symbolischer Link ist"
 
 #, c-format
 msgid ""
@@ -23827,28 +23811,25 @@ msgstr ""
 msgid "Failed to send %s\n"
 msgstr "Fehler beim Senden %s\n"
 
-#, fuzzy, perl-format
+#, perl-format
 msgid "Dry-Sent %s"
-msgstr "Probeversand %s\n"
+msgstr "Probeversand %s"
 
-#, fuzzy, perl-format
+#, perl-format
 msgid "Sent %s"
-msgstr "%s gesendet\n"
+msgstr "%s gesendet"
 
-#, fuzzy
 msgid "Dry-OK. Log says:"
-msgstr "Probeversand OK. Log enthält:\n"
+msgstr "Probelauf OK. Das Protokoll enthält:"
 
-#, fuzzy
 msgid "OK. Log says:"
-msgstr "OK. Log enthält:\n"
+msgstr "OK. Das Protokoll enthält:"
 
 msgid "Result: "
 msgstr "Ergebnis: "
 
-#, fuzzy
 msgid "Result: OK"
-msgstr "Ergebnis: OK\n"
+msgstr "Ergebnis: OK"
 
 #, perl-format
 msgid "can't open file %s"
