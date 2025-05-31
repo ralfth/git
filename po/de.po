@@ -3357,9 +3357,8 @@ msgstr "Nur eine Batch-Option erlaubt."
 msgid "git cat-file <type> <object>"
 msgstr "git cat-file <Typ> <Objekt>"
 
-#, fuzzy
 msgid "git cat-file (-e | -p | -t | -s) <object>"
-msgstr "git cat-file (-e | -p) <Objekt>"
+msgstr "git cat-file (-e | -p | -t | -s) <Objekt>"
 
 msgid ""
 "git cat-file (--textconv | --filters)\n"
@@ -3458,11 +3457,11 @@ msgstr ""
 "nutzen Sie einen <Pfad> für (--textconv | --filters); Nicht mit 'batch'"
 
 msgid "objects filter only supported in batch mode"
-msgstr ""
+msgstr "Objektfilter werden nur im Batch-Modus unterstützt"
 
-#, fuzzy, c-format
+#, c-format
 msgid "objects filter not supported: '%s'"
-msgstr "Objekt nicht gefunden: %s"
+msgstr "Objektfilter nicht unterstützt: '%s'"
 
 #, c-format
 msgid "'%s=<%s>' needs '%s' or '%s'"
@@ -5789,55 +5788,49 @@ msgstr "Dateiendung im strftime-Format für den Dateinamen angeben"
 msgid "specify the content of the diagnostic archive"
 msgstr "den Inhalt des Diagnosearchivs angeben"
 
-#, fuzzy, c-format
+#, c-format
 msgid "unable to parse mode: %s"
-msgstr "Konnte Objekt '%s' nicht parsen."
+msgstr "Konnte Modus '%s' nicht parsen."
 
-#, fuzzy, c-format
+#, c-format
 msgid "unable to parse object id: %s"
-msgstr "Konnte Objekt '%s' nicht parsen."
+msgstr "Konnte Objekt-ID '%s' nicht parsen."
 
-#, fuzzy
 msgid "git diff-pairs -z [<diff-options>]"
-msgstr "git stash list [<log-Optionen>]"
+msgstr "git diff-pairs -z [<Diff-Optionen>]"
 
 #, c-format
 msgid "unrecognized argument: %s"
 msgstr "nicht erkanntes Argument: %s"
 
-#, fuzzy
 msgid "working without -z is not supported"
-msgstr "das Schreiben in die Standard-Eingabe wird nicht unterstützt"
+msgstr "Arbeiten ohne -z wird nicht unterstützt"
 
-#, fuzzy
 msgid "pathspec arguments not supported"
-msgstr "Magie von Pfadspezifikationen wird von --follow nicht unterstützt: %s"
+msgstr "Pfadspezifikationen als Argumente werden nicht unterstützt"
 
-#, fuzzy
 msgid "revision arguments not allowed"
-msgstr "Übertragungsart '%s' nicht erlaubt."
+msgstr "Commits als Argumente werden nicht unterstützt"
 
-#, fuzzy
 msgid "invalid raw diff input"
-msgstr "Ungültige \"Date\"-Zeile"
+msgstr "ungültige Raw-Diff-Eingabe"
 
-#, fuzzy
 msgid "tree objects not supported"
-msgstr "Das Bearbeiten von Blobs wird nicht unterstützt."
+msgstr "Tree-Objekte werden nicht unterstützt"
 
 msgid "got EOF while reading path"
-msgstr ""
+msgstr "EOF beim Lesen des Pfads"
 
 msgid "got EOF while reading destination path"
-msgstr ""
+msgstr "EOF beim Lesen des Zielpfads"
 
-#, fuzzy, c-format
+#, c-format
 msgid "unable to parse rename/copy score: %s"
-msgstr "Konnte Kopfbereich von %s nicht parsen."
+msgstr "Konnte Umbenennen/Kopieren-Punktzahl nicht parsen: %s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "unknown diff status: %c"
-msgstr "unerwarteter Differenz-Status %c"
+msgstr "unbekannter Diff-Status: %c"
 
 msgid "--merge-base only works with two commits"
 msgstr "--merge-base funktioniert nur mit zwei Commits"
@@ -5981,9 +5974,8 @@ msgstr "Fortschritt nach <n> Objekten anzeigen"
 msgid "select handling of signed tags"
 msgstr "Behandlung von signierten Tags wählen"
 
-#, fuzzy
 msgid "select handling of signed commits"
-msgstr "Behandlung von signierten Tags wählen"
+msgstr "Behandlung von signierten Commits wählen"
 
 msgid "select handling of tags that tag filtered objects"
 msgstr "Behandlung von Tags wählen, die gefilterte Objekte markieren"
@@ -6703,11 +6695,9 @@ msgstr "rev-Index für Pack-Datei '%s' kann nicht geladen werden"
 msgid "invalid rev-index for pack '%s'"
 msgstr "ungültiger Rev-Index für Pack-Datei '%s'"
 
-#, fuzzy
 msgid "Checking ref database"
-msgstr "Prüfe Reflog %s->%s"
+msgstr "Referenzdatenbank überprüfen"
 
-#, fuzzy
 msgid ""
 "git fsck [--tags] [--root] [--unreachable] [--cache] [--no-reflogs]\n"
 "         [--[no-]full] [--strict] [--verbose] [--lost-found]\n"
@@ -6717,7 +6707,7 @@ msgstr ""
 "git fsck [--tags] [--root] [--unreachable] [--cache] [--no-reflogs]\n"
 "         [--[no-]full] [--strict] [--verbose] [--lost-found]\n"
 "         [--[no-]dangling] [--[no-]progress] [--connectivity-only]\n"
-"         [--[no-]name-objects] [<Objekt>...]"
+"         [--[no-]name-objects] [--[no-]references] [<Objekt>...]"
 
 msgid "show unreachable objects"
 msgstr "unerreichbare Objekte anzeigen"
@@ -6755,9 +6745,8 @@ msgstr "Fortschrittsanzeige anzeigen"
 msgid "show verbose names for reachable objects"
 msgstr "ausführliche Namen für erreichbare Objekte anzeigen"
 
-#, fuzzy
 msgid "check reference database consistency"
-msgstr "Überprüfung der Konsistenz der Referenzen"
+msgstr "Konsistenz der Referenzdatenbank überprüfen"
 
 msgid "Checking objects"
 msgstr "Prüfe Objekte"
@@ -8588,7 +8577,7 @@ msgid "also show informational/conflict messages"
 msgstr "auch Informations-/Konfliktmeldungen anzeigen"
 
 msgid "suppress all output; only exit status wanted"
-msgstr ""
+msgstr "alle Ausgaben unterdrücken; nur Exit-Status verwenden"
 
 msgid "list filenames without modes/oids/stages"
 msgstr "Dateinamen ohne Modi/Oids/Stufen auflisten"
@@ -9004,13 +8993,11 @@ msgstr ""
 "während des Umpackens, sammle Paket-Dateien von geringerer Größe in einen "
 "Stapel, welcher größer ist als diese Größe"
 
-#, fuzzy
 msgid "git mv [-v] [-f] [-n] [-k] <source> <destination>"
-msgstr "git mv [<Optionen>] <Quelle>... <Ziel>"
+msgstr "git mv [-v] [-f] [-n] [-k] <Quelle> <Ziel>"
 
-#, fuzzy
 msgid "git mv [-v] [-f] [-n] [-k] <source>... <destination-directory>"
-msgstr "git mv [<Optionen>] <Quelle>... <Ziel>"
+msgstr "git mv [-v] [-f] [-n] [-k] <Quelle>... <Zielverzeichnis>"
 
 #, c-format
 msgid "Directory %s is in index and no submodule?"
@@ -9081,9 +9068,11 @@ msgstr "Ziel existiert im Index"
 msgid "%s, source=%s, destination=%s"
 msgstr "%s, Quelle=%s, Ziel=%s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "cannot move both '%s' and its parent directory '%s'"
-msgstr "Kann 'fetch' nicht für sowohl %s als auch %s nach %s ausführen."
+msgstr ""
+"kann nicht sowohl '%s' als auch das übergeordnete Verzeichnis '%s' "
+"verschieben"
 
 #, c-format
 msgid "Renaming %s to %s\n"
@@ -11048,7 +11037,7 @@ msgid "git reflog exists <ref>"
 msgstr "git reflog exists <Referenz>"
 
 msgid "git reflog drop [--all [--single-worktree] | <refs>...]"
-msgstr ""
+msgstr "git reflog drop [--all [--single-worktree] | <Referenzen>...]"
 
 #, c-format
 msgid "invalid timestamp '%s' given to '--%s'"
@@ -11100,9 +11089,9 @@ msgstr ""
 msgid "Marking reachable objects..."
 msgstr "Markiere nicht erreichbare Objekte..."
 
-#, fuzzy, c-format
+#, c-format
 msgid "reflog could not be found: '%s'"
-msgstr "Konnte Paket '%s' nicht lesen."
+msgstr "Reflog konnte nicht gefunden werden: '%s'"
 
 msgid "no reflog specified to delete"
 msgstr "Kein Reflog zum Löschen angegeben."
@@ -11111,18 +11100,14 @@ msgstr "Kein Reflog zum Löschen angegeben."
 msgid "invalid ref format: %s"
 msgstr "Ungültiges Format für Referenzen: %s"
 
-#, fuzzy
 msgid "drop the reflogs of all references"
-msgstr "Reflogs von allen Referenzen verarbeiten"
+msgstr "die Reflogs aller Referenzen löschen"
 
-#, fuzzy
 msgid "drop reflogs from the current worktree only"
-msgstr ""
-"Verarbeitung der Reflogs auf das aktuelle Arbeitsverzeichnis beschränken"
+msgstr "nur Reflogs aus dem aktuellen Arbeitsverzeichnis löschen"
 
-#, fuzzy
 msgid "references specified along with --all"
-msgstr "Muster kombinieren, die mit -e angegeben wurden"
+msgstr "Referenzen, die zusammen mit --all angegeben werden"
 
 msgid "git refs migrate --ref-format=<format> [--no-reflog] [--dry-run]"
 msgstr "git refs migrate --ref-format=<Format> [--no-reflog] [--dry-run]"
@@ -11686,9 +11671,9 @@ msgstr "Datumsangabe"
 msgid "with --cruft, expire objects older than this"
 msgstr "mit --cruft, Objekte verfallen lassen, die älter sind als das"
 
-#, fuzzy
 msgid "with --cruft, only repack cruft packs smaller than this"
-msgstr "mit --cruft, Objekte verfallen lassen, die älter sind als das"
+msgstr ""
+"mit --cruft, nur Cruft-Pakete umpacken, die kleiner als dieser Wert sind"
 
 msgid "remove redundant packs, and run git-prune-packed"
 msgstr "redundante Pakete entfernen und \"git-prune-packed\" ausführen"
@@ -12173,9 +12158,8 @@ msgstr "konnte Festplattennutzung von %s nicht bekommen"
 msgid "invalid value for '%s': '%s', the only allowed format is '%s'"
 msgstr "ungültiger Wert für '%s': '%s', das einzig zulässige Format ist '%s'"
 
-#, fuzzy
 msgid "-z option used with unsupported option"
-msgstr "die Operation wird von dem Protokoll nicht unterstützt"
+msgstr "Die Option -z wird mit nicht unterstützter Option verwendet."
 
 msgid "rev-list does not support display of notes"
 msgstr "rev-list unterstützt keine Anzeige von Notizen"
@@ -14095,9 +14079,8 @@ msgstr "git update-ref [<Optionen>] -d <Referenzname> [<alte-oid>]"
 msgid "git update-ref [<options>]    <refname> <new-oid> [<old-oid>]"
 msgstr "git update-ref [<Optionen>]    <Referenzname> <neue-oid> [<alte-oid>]"
 
-#, fuzzy
 msgid "git update-ref [<options>] --stdin [-z] [--batch-updates]"
-msgstr "git update-ref [<Optionen>] --stdin [-z]"
+msgstr "git update-ref [<Optionen>] --stdin [-z] [--batch-updates]"
 
 msgid "delete the reference"
 msgstr "diese Referenz löschen"
@@ -14111,9 +14094,8 @@ msgstr "Standard-Eingabe hat durch NUL-Zeichen abgeschlossene Argumente"
 msgid "read updates from stdin"
 msgstr "Aktualisierungen von der Standard-Eingabe lesen"
 
-#, fuzzy
 msgid "batch reference updates"
-msgstr "Aktualisierung erzwingen"
+msgstr "Batch-Referenz-Updates"
 
 msgid "update the info files from scratch"
 msgstr "die Informationsdateien von Grund auf aktualisieren"
@@ -14829,10 +14811,8 @@ msgstr "Dateien von dem Arbeitsverzeichnis und dem Index vergleichen"
 msgid "Compare a tree to the working tree or index"
 msgstr "ein Verzeichnis von dem Arbeitsverzeichnis und dem Index vergleichen"
 
-#, fuzzy
 msgid "Compare the content and mode of provided blob pairs"
-msgstr ""
-"den Inhalt und Modus von Blobs aus zwei Verzeichnisobjekten vergleichen"
+msgstr "Inhalt und Modus der bereitgestellten Blobpaare vergleichen"
 
 msgid "Compares the content and mode of blobs found via two tree objects"
 msgstr ""
@@ -18287,9 +18267,9 @@ msgid "ignoring existing multi-pack-index; checksum mismatch"
 msgstr ""
 "ignoriere existierenden Multi-Pack-Index; Prüfsumme stimmt nicht überein"
 
-#, fuzzy, c-format
+#, c-format
 msgid "could not load reverse index for MIDX %s"
-msgstr "konnte Index für %s nicht öffnen"
+msgstr "konnte den umgekehrten Index für MIDX %s nicht laden"
 
 msgid "Adding packfiles to multi-pack-index"
 msgstr "Packdateien zum Multi-Pack-Index hinzufügen"
@@ -18697,9 +18677,9 @@ msgstr "Konnte Kopfbereich von %s nicht entpacken."
 msgid "unable to parse header of %s"
 msgstr "Konnte Kopfbereich von %s nicht parsen."
 
-#, fuzzy, c-format
+#, c-format
 msgid "unable to parse type from header '%s' of %s"
-msgstr "Konnte Kopfbereich von %s nicht parsen."
+msgstr "Konnte den Typ aus der Kopfzeile '%s' von %s nicht parsen."
 
 #, c-format
 msgid "unable to unpack contents of %s"
@@ -19217,13 +19197,11 @@ msgstr "%s ist nicht verfügbar."
 
 #, c-format
 msgid "value %s for %s not in range [%<PRIdMAX>,%<PRIdMAX>]"
-msgstr ""
+msgstr "Wert %s für %s nicht im Bereich [%<PRIdMAX>,%<PRIdMAX>]"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s expects an integer value with an optional k/m/g suffix"
-msgstr ""
-"%s erwartet einen nicht-negativen Integer-Wert mit einem optionalen k/m/g "
-"Suffix"
+msgstr "%s erwartet einen ganzzahligen Wert mit einem optionalen k/m/g-Suffix"
 
 #, c-format
 msgid "%s expects a non-negative integer value with an optional k/m/g suffix"
@@ -19553,9 +19531,9 @@ msgstr "konnte %s nicht von Promisor-Remote abrufen"
 
 #, c-format
 msgid "no or empty URL advertised for remote '%s'"
-msgstr ""
+msgstr "keine oder leere URL für Remote-Repository '%s' angegeben"
 
-#, fuzzy, c-format
+#, c-format
 msgid "known remote named '%s' but with URL '%s' instead of '%s'"
 msgstr ""
 "bekanntes Remote-Repository mit dem Namen '%s', aber mit der URL '%s' statt "
@@ -20336,9 +20314,9 @@ msgstr "Verzeichnis %s kann nicht geöffnet werden"
 msgid "Checking references consistency"
 msgstr "Überprüfung der Konsistenz der Referenzen"
 
-#, fuzzy, c-format
+#, c-format
 msgid "unable to open '%s'"
-msgstr "kann %s nicht öffnen"
+msgstr "konnte '%s' nicht öffnen"
 
 #, c-format
 msgid "refname is dangerous: %s"
@@ -20963,9 +20941,8 @@ msgstr "konnte keine Eintragung hinzufügen"
 msgid "could not set recommended config"
 msgstr "konnte die empfohlene Konfiguration nicht setzen"
 
-#, fuzzy
 msgid "could not toggle maintenance"
-msgstr "konnte die Wartung nicht einschalten"
+msgstr "konnte die Wartung nicht umschalten"
 
 msgid "could not start the FSMonitor daemon"
 msgstr "konnte den FSMonitor-Daemon nicht starten"
@@ -21013,15 +20990,14 @@ msgid "specify if tags should be fetched during clone"
 msgstr "Angabe, ob Tags während des Klonens abgerufen werden sollen"
 
 msgid "specify if background maintenance should be enabled"
-msgstr ""
+msgstr "angeben, ob die Hintergrundwartung aktiviert werden soll"
 
-#, fuzzy
 msgid ""
 "scalar clone [--single-branch] [--branch <main-branch>] [--full-clone]\n"
 "\t[--[no-]src] [--[no-]tags] [--[no-]maintenance] <url> [<enlistment>]"
 msgstr ""
 "scalar clone [--single-branch] [--branch <Haupt-Branch>] [--full-clone]\n"
-"\t[--[no-]src] [--[no-]tags] <URL> [<Eintragung>]"
+"\t[--[no-]src] [--[no-]tags] [--[no-]maintenance] <URL> [<Eintragung>]"
 
 #, c-format
 msgid "cannot deduce worktree name from '%s'"
@@ -21059,33 +21035,31 @@ msgstr "scalar diagnose [<Eintragung>]"
 msgid "`scalar list` does not take arguments"
 msgstr "`scalar list` akzeptiert keine Argumente"
 
-#, fuzzy
 msgid "scalar register [--[no-]maintenance] [<enlistment>]"
-msgstr "scalar register [<Eintragung>]"
+msgstr "scalar register [--[no-]maintenance] [<Eintragung>]"
 
 msgid "reconfigure all registered enlistments"
 msgstr "alle registrierten Eintragungen neu konfigurieren"
 
-#, fuzzy
 msgid "(enable|disable|keep)"
-msgstr "Cache für unversionierte Dateien aktivieren oder deaktivieren"
+msgstr "(enable|disable|keep)"
 
-#, fuzzy
 msgid "signal how to adjust background maintenance"
-msgstr "kann keine Sperre für die geplante Hintergrundwartung erhalten"
+msgstr "Angabe, wie die Hintergrundwartung einzustellen ist"
 
-#, fuzzy
 msgid ""
 "scalar reconfigure [--maintenance=(enable|disable|keep)] [--all | "
 "<enlistment>]"
-msgstr "scalar reconfigure [--all | <Eintragung>]"
+msgstr ""
+"scalar reconfigure [--maintenance=(enable|disable|keep)] [--all | "
+"<Eintragung>]"
 
 msgid "--all or <enlistment>, but not both"
 msgstr "--all oder <Eintragung>, aber nicht beides"
 
-#, fuzzy, c-format
+#, c-format
 msgid "unknown mode for --maintenance option: %s"
-msgstr "unbekannter Modus für --abbrev-ref: %s"
+msgstr "unbekannter Modus für die Option --maintenance: %s"
 
 #, c-format
 msgid "could not remove stale scalar.repo '%s'"
@@ -22545,9 +22519,8 @@ msgstr ""
 "Anzahl der Einträge im Cache-Verzeichnis, die ungültig gemacht werden sollen "
 "(Standardwert 0)"
 
-#, fuzzy
 msgid "the number of objects to write"
-msgstr "Mindestanzahl der gleichzeitig anzufordernden Objekte"
+msgstr "die Anzahl der zu schreibenden Objekte"
 
 msgid "test-tool path-walk <options> -- <revision-options>"
 msgstr "test-tool path-walk <Optionen> -- <Commit-Optionen>"
@@ -24159,10 +24132,11 @@ msgstr ""
 
 #, perl-format
 msgid "Outlook reassigned Message-ID to: %s\n"
-msgstr ""
+msgstr "Outlook hat die Message-ID neu zugewiesen: %s\n"
 
 msgid "Warning: Could not retrieve Message-ID from server response.\n"
 msgstr ""
+"Warnung: Message-ID konnte nicht aus der Serverantwort abgerufen werden.\n"
 
 #, perl-format
 msgid "Failed to send %s\n"
